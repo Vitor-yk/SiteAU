@@ -11,6 +11,14 @@ nav{
   font-size: 15px;
 }
 
+#forma-1{
+  z-index: -2;
+  right: 0px;
+}
+
+#logo-main{
+  fill: white;
+}
 /*  pagina inicial  */
 
 #mainimage{
@@ -34,10 +42,10 @@ nav{
 
 #button1{
   color: #CE2501;
-  padding: 13px;
+  padding: 10px;
   margin: 30px;
   margin-left: 0px;
-  background-color:white;
+  background-color:none;
   border: 3px;
   border-color: #CE2501;
   border-style: solid;
@@ -55,8 +63,7 @@ nav{
 #equipe-img{
   z-index: +1;
   position: absolute;
-  right: 200px;
-
+  right: 11%;
 }
 #carrossel{
   font-family: 'Poppins', sans-serif;
@@ -73,12 +80,11 @@ nav{
   background-color: #FD5F2D;
   border-radius: 100%;
 }
+#patinhas-1{
+  position: absolute;
+  left: 70%;
 
-#sobre{
-  background-color: aqua;
-  color: aquamarine;
 }
-
 
 /*  Catalogo  */
 #text-catalogo{
@@ -111,7 +117,6 @@ nav{
   color: black;
 }
 img{
-  
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -251,4 +256,109 @@ font-family: GochiHand-Regular, Gochi Hand;
 
 #local-div{
   padding: 20px;
+}
+
+/*    bazar   */
+
+.bazar-img{
+  position: absolute;
+  left:-20px;
+}
+#bazar-div{
+font-family: 'Poppins', sans-serif;
+}
+#bazar-div button{
+  font-size: 20px;
+}
+#bazar-div svg{
+  fill: #FD5F2D;
+}
+
+/*   Rifas   */
+
+#rifa-div-forma svg{
+  position: absolute;
+  left: 24%;
+}
+
+#rifa-div svg{
+  fill: #FD5F2D;
+}
+
+#buttons-alt{
+  color: #CE2501;
+  width: 150px;
+  height: 50px;
+  border: 2px;
+  border-style: solid;
+  border-color:#CE2501 ;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#buttons-alt a{
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #CE2501;
+}
+
+/*   voluntario  */
+
+#voluntario-div svg{
+  fill: #FD5F2D;
+}
+
+/*    footer    */
+footer{
+  color: #CE2501;
+}
+footer svg{
+  fill: #CE2501;
+}
+
+#footer-main-form{
+  margin: 0%;
+  position: absolute;
+}
+#footer-main{
+  position: absolute;
+  left:-15px;
+}
+#redes-div{
+position: absolute;
+top: 200px;
+}
+
+/*  perfil do animal  */
+#fotos-perfil{
+
+}
+
+#fotos-perfil img{
+border-radius: 20px;
+padding-top: 5px;
+}
+
+#perfil-info-div li{
+  list-style: none;
+  font-size: 15px;
+}
+#button-adotar{
+  color: #CE2501;
+  width: 250px;
+  height: 50px;
+  border: 2px;
+  border-style: solid;
+  border-color:#CE2501 ;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 1px 2px 2px rgba(0,0,0, 0.5);
+}
+#button-adotar a{
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #CE2501;
+}
+#button-adotar:hover{
+  background-color: #FD5F2D;
 }
