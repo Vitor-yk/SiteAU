@@ -59,7 +59,9 @@ nav{
 }
 
 /*  Sobre  */
-
+#patinhas-1{
+  top:1000px;
+}
 #equipe-img{
   z-index: +1;
   position: absolute;
@@ -87,6 +89,7 @@ nav{
 }
 
 /*  Catalogo  */
+
 #text-catalogo{
   font-family:'Lilita One', cursive;
   font-size: 30px;
@@ -99,23 +102,51 @@ nav{
   font-size: 20px;
   
 }
-#cachorro-titulo h2{
+#cachorro-titulo{
   color: #CE2501;
   font-size: 30px;
-  
 }
 
+#catalogo-caes{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
 #nome{
-  padding: 0px 30px;
-  font-size: 20px;
+  padding: 0px 10px;
+  position: absolute;
   width: 180px;
+  height: 45px;
   float: left;
-  text-align: left;
+  font-size: 15px;
   border-color: black;
   border-radius: 0px 0px 10px 10px;
-  box-shadow: 0 5px 5px rgba(0,0,0, 0.5);
+  box-shadow: 0 2px 2px rgba(0,0,0, 0.5);
   color: black;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
 }
+#info-nome ul{
+  color: gray;
+  font-size: 10px;
+  padding: 1px 6px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#point-nome svg{
+fill: #FD5F2D;
+}
+#genero-nome{
+  fill: #FD5F2D;
+  color: #FD5F2D;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
 img{
   border-radius: 10px 10px 0px 0px;
 }
@@ -127,6 +158,17 @@ img{
   height: 360px;
   overflow-x:hidden;
 }
+
+#myBtnContainer{
+  background-color: white;
+  padding: 10px;
+  fill: gray;
+  
+}
+#myBtnContainer p{
+  font-size: 10px;
+}
+
 
 #content {
   
@@ -145,13 +187,12 @@ img{
 }
 #slideRight{
   position: absolute;
-  left: 1080px;
   width: 40px;
-  height: 360px;
-  background-color: white;
-  box-shadow: 0px 5px 15px rgba(0,0,0, 0.5);
+  top: 5px;
+  height: 450px;
+  background-color: #F5F5F5;
+  box-shadow: 0px 0px 5px rgba(0,0,0, 0.5);
   border: none;
-  
   z-index: +1;
 }
 
@@ -184,6 +225,11 @@ img{
   grid-auto-flow: column;
 }
 
+#filtro-custom{
+  color: #CE2501;
+}
+
+
 
 /* Style the buttons */
 .btn {
@@ -196,11 +242,12 @@ img{
 
 .btn:hover {
   background-color: #ddd;
+  fill: #CE2501;
 }
 
 .btn.active {
-  background-color: #666;
-  color: white;
+  background-color: white;
+  fill: #CE2501;
 }
 
 /*     quero  ajudar      */
@@ -234,6 +281,7 @@ img{
   background-color: #FD5F2D;
 }
 #setas-color{
+  color: #FFC222;
   fill: #FFC222;
 }
 .cls-1 {
@@ -256,6 +304,10 @@ font-family: GochiHand-Regular, Gochi Hand;
 
 #local-div{
   padding: 20px;
+}
+
+#local-div p{
+  font-size: 12px;
 }
 
 /*    bazar   */
@@ -323,16 +375,16 @@ footer svg{
 #footer-main{
   position: absolute;
   left:-15px;
+  z-index: -1;
 }
 #redes-div{
 position: absolute;
 top: 200px;
+left: 25%;
 }
 
 /*  perfil do animal  */
-#fotos-perfil{
 
-}
 
 #fotos-perfil img{
 border-radius: 20px;
@@ -361,4 +413,38 @@ padding-top: 5px;
 }
 #button-adotar:hover{
   background-color: #FD5F2D;
+}
+
+
+/*  partes  */
+
+
+.vl {
+  border-left: 1px solid gray;
+  height: 50px;
+  background-color: #CE2501;
+  width: 1px;
+}
+
+/*    Tela do ADM    */
+
+.secao-adm{
+
+}
+.secao-adm a{
+  color: black;
+  text-decoration: none;
+}
+#button-adm-add{
+  color: #FD5F2D;
+  padding: 10px;
+  margin: 30px;
+  margin-left: 0px;
+  background-color:white;
+  border: 3px;
+  border-color: #FD5F2D;
+  border-style: solid;
+  font-size: 18px ;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
 }
