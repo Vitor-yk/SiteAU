@@ -11,8 +11,8 @@ router.get('/about', (req, res) => {
     res.render('pages/about');
 });
 
-router.get('/doacoes', (req, res) => {
-    res.render('pages/doacoes');
+router.get('/perfil', (req, res) => {
+    res.render('pages/perfil');
 });
 
 router.get('/cadastro', (req, res) => {
