@@ -15,6 +15,10 @@ router.get('/perfil', (req, res) => {
     res.render('pages/perfil');
 });
 
+router.get('/perfil-adm', (req, res) => {
+    res.render('pages/perfil-adm');
+});
+
 router.get('/cadastro', (req, res) => {
     res.render('pages/cadastro', { users: users });
 });
