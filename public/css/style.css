@@ -392,18 +392,92 @@ top: 200px;
 left: 25%;
 }
 
-/*  perfil do animal  */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  perfil do animal  */
 
 #fotos-perfil img{
 border-radius: 20px;
 padding-top: 5px;
 }
 
+.apresentacao-perfil{
+  font-weight: bold;
+}
+.apresentacao-perfil-nome{
+  color: #CE2501;
+  font-weight: bold;
+}
+.apresentacao-perfil-historia{
+  font-weight:bold;
+}
+
+
+#text-perfil{
+  height: 210px;
+  overflow:auto;
+}
+
+#text-perfil::-webkit-scrollbar {
+  width: 5px;
+
+}
+#text-perfil::-webkit-scrollbar-track {
+background-color: white; 
+}
+#text-perfil::-webkit-scrollbar-thumb {
+  background: #C5C5C5; 
+}
+
+
+#perfil-info-div{
+  font-family: 'Poppins', sans-serif;
+}
+
 #perfil-info-div li{
   list-style: none;
+  font-size: 12px;
+  padding-top: 5px;
+}
+#perfil-info-div h6{
   font-size: 15px;
 }
+.caracteristicas-geral{
+  font-weight: bold;
+  color:red;
+}
+
+#forma-perfil{
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #button-adotar{
   color: #CE2501;
   width: 250px;
@@ -415,24 +489,44 @@ padding-top: 5px;
   background-color: white;
   box-shadow: 1px 2px 2px rgba(0,0,0, 0.5);
 }
+
 #button-adotar a{
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: #CE2501;
 }
+
 #button-adotar:hover{
   background-color: #FD5F2D;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  partes  */
-
-
 .vl {
   border-left: 1px solid gray;
   height: 50px;
   background-color: #CE2501;
   width: 1px;
+}
+#setas-color2{
+  padding-left: 50px;
+  fill: #C5C5C5;
 }
 
 
@@ -652,6 +746,7 @@ padding-top: 5px;
 
 
 
+
 #icons-adm-color{
   fill: #FD5F2D;
 }
@@ -666,10 +761,10 @@ padding-top: 5px;
 #ponto-adm-div::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-track {
+#ponto-adm-div::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
 }
-::-webkit-scrollbar-thumb {
+#ponto-adm-div::-webkit-scrollbar-thumb {
   background: gray; 
 }
 
@@ -772,4 +867,67 @@ input:checked + .slider:before {
   padding: 2px;
   width: 150px;
   height: 20px;
+}
+
+
+
+
+
+/*    perfil do animal editavel-adm      */
+
+.container-edit {
+  display: inline;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-edit input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: solid 1px;
+  border-color: black;
+  background-color: none;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+
+/* When the radio button is checked, add a blue background */
+.container-edit input:checked ~ .checkmark {
+  background-color: #FFC222;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  position: absolute;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-edit input:checked ~ .checkmark:after {
+  display: block;
+}
+
+#form-txt-adm {
+width: 20px;
+height: 30px;
+z-index: +1;
 }
