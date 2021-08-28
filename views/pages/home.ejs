@@ -1,45 +1,66 @@
 <%- contentFor( 'body' ) %>
     <div id="main">
-        <div id="main2">
-            <!--  forma inicial  -->
-            <div class="container-fluid position-absolute mx-0" id="forma-1">
-                <svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: #f5f5f5;
-                            }
-                        </style>
-                    </defs>
-                    <title>Forma 1</title>
-                    <path class="cls-1"
-                        d="M.13,1022,0,0H1920c-.15,246.6,0,937.57,0,937.57s-18.23-2.84-35.43-4.05c-253.4-17.85-420.34-26-749.93,60.94-78.24,20.65-302.12,63.56-371.22,71.75-80.24,9.52-160.83,13.15-241.57,13.72-61.71.43-123.37-1-185-5-49.76-3.25-99.31-8.43-148.61-15.87C125,1049.46,62.62,1035.44.13,1022Z" />
-                </svg>
-            </div>
-            <!--  foto cachorro estatico  -->
-            <div class=" position-absolute d-flex" id="mainimage">
-                <img src="/img/fotos/Estático - Cao.png" width="900" alt="">
-            </div>
-            <!--  apresentação da aplicação  -->
-            <h1 class="col-9 pt-5 " id="titulo-main">
-                Encontre<br>
-                seu melhor amigo</h1>
-            <h4 class="col-8 pt-3 " id="subtitulo-1-main">
-                Existem cada vez mais animais abandonados e tudo que eles precisam é de alguém para amar.
-            </h4>
-            <h4 class="col-9 pt-3" id="subtitulo-1-main">
-                Ao adotar você
-                não ganha apenas um pet para lhe fazer companhia, você ganha um amigo para todos os momentos. Não
-                compre, adote!
-            </h4>
-        </div>
-       
-        <div class="col-12 pt-1 d-flex" id="button">
-            <button type="button" class="btn btn-none  btn-lg " id="button1">QUERO ADOTAR</button>
-            <button type="button" class="btn btn-none  btn-lg " id="button1">QUERO AJUDAR</button>
+    
+        <!--  formas do background  -->
+        <div>
+            <svg class="formas" id="forma-1" data-name="forma 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+                <defs>
+                    <style>.cls-1{fill:#f5f5f5;}</style>
+                </defs>
+                <title>Forma 1</title>
+                <path class="cls-1" d="M.13,1022,0,0H1920c-.15,246.6,0,937.57,0,937.57s-18.23-2.84-35.43-4.05c-253.4-17.85-420.34-26-749.93,60.94-78.24,20.65-302.12,63.56-371.22,71.75-80.24,9.52-160.83,13.15-241.57,13.72-61.71.43-123.37-1-185-5-49.76-3.25-99.31-8.43-148.61-15.87C125,1049.46,62.62,1035.44.13,1022Z"/>
+            </svg>
+        
+        
+
+            <svg class="formas" id="forma-2" data-name="forma 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+                <defs>
+                    <style>.cls-1{fill:#f5f5f5;}</style>
+                </defs>
+                <title>Forma 2</title>
+                <path class="cls-1" d="M1442.47,39.8C1323.87,59.56,1201.24,80,960,80S596.13,59.56,477.53,39.8C360.14,20.23,238.76,0,0,0V1080H1920V0C1681.24,0,1559.86,20.23,1442.47,39.8Z"/>
+            </svg>
+
+
+
+            <svg class="formas" id="forma-3" data-name="forma 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+                <defs>
+                    <style>.cls-1{fill:#f5f5f5;}</style>
+                </defs>
+                <title>Forma 3</title>
+                <path class="cls-1" d="M0,0V1080c117,0,173.94-23.73,234.23-48.85S357,980,480,980s185.41,26,245.77,51.15S843,1080,960,1080s173.94-23.73,234.23-48.85S1317,980,1440,980s185.41,26,245.77,51.15S1803,1080,1920,1080V0Z"/>
+            </svg>
         </div>
 
-        <!--  pata grande forma  -->
+
+        
+        <!--  foto cachorro estatico  -->
+        <div class=" position-absolute d-flex" id="mainimage">
+            <img src="/img/fotos/Estático - Cao.png" width="900" alt="">
+        </div>
+            
+        <!--  apresentação da aplicação  -->
+        <div id="bloco-main">
+                <h1 class="col-9 pt-5 " id="titulo-main">
+                    Encontre<br>
+                    seu melhor amigo</h1>
+                <h4 class="col-7 pt-3 " id="subtitulo-1-main">
+                    Existem cada vez mais animais abandonados e tudo que eles precisam é de alguém para amar.
+                </h4>
+                <h4 class="col-7 pt-3" id="subtitulo-1-main">
+                    Ao adotar você
+                    não ganha apenas um pet para lhe fazer companhia, você ganha um amigo para todos os momentos. Não
+                    compre, adote!
+                </h4>
+
+                <div class="col-12 pt-1 d-flex" id="button" >
+                    <button type="button" class="btn btn-none  btn-lg " id="button1">QUERO ADOTAR</button>
+                    <button type="button" class="btn btn-none  btn-lg " id="button1">QUERO AJUDAR</button>
+                </div>
+
+        </div>
+
+        <!--  pata grande forma  
         <div class="row-1 p-5 position-absolute">
             <svg id="setas-color" width="100" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 200 200">
@@ -56,6 +77,9 @@
                     d="M100.49,101.42a31.07,31.07,0,0,1,5.17,2.64c23.17,14.65,25.18,59.65,13.27,78.48-4.94,7.8-16.43,9.48-28,4.82A44,44,0,0,1,84,183.8a40.11,40.11,0,0,1-10.28-9.5A30.22,30.22,0,0,0,65.88,167a26.51,26.51,0,0,0-4.24-2.19A42.16,42.16,0,0,0,55.89,163a51.27,51.27,0,0,1-7-2.16,36.37,36.37,0,0,1-6-3.06c-13.68-8.65-19.75-22.76-13.83-32.12,11.07-17.5,47.7-33.82,71.42-24.28Zm1.29-3.2-1.29,3.2,1.29-3.2h0c-11.58-4.65-27.23-3.93-43,2C44.5,105.58,32,114.65,26.16,123.86c-7,11-.41,27.19,14.9,36.87a40.15,40.15,0,0,0,6.51,3.35,55.19,55.19,0,0,0,7.48,2.3,38.64,38.64,0,0,1,5.3,1.59,22.69,22.69,0,0,1,3.69,1.9,27.16,27.16,0,0,1,7,6.62,43.81,43.81,0,0,0,11.1,10.22,45.53,45.53,0,0,0,7.47,3.84c13.51,5.43,26.46,2.95,32.23-6.17,6.37-10.08,9.07-26.58,7-43.07-2.27-18.38-10.06-33-21.37-40.16a35.8,35.8,0,0,0-5.72-2.93Z" />
             </svg>
         </div>
+
+        -->
+
     </div>
 
     <!----------------------------------------------------------------------------->
@@ -63,50 +87,46 @@
     <div class="row-1 p-5">
     </div>
 
-    <div class="d-flex pt-5" id="abouts">
-        <div class="col-6 d-flex position-relative w-100" id="equipe-img">
-            <img src="/img/forms/Forma - Quem somos.svg" width="1000px" alt="">
-        </div>
-        <div class="col-5 d-flex pt-5">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner" id="carrossel">
-                    <div class="carousel-item active">
-                        <div class=" d-none d-md-block">
-                            <h5>Quem Somos?</h5>
-                            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                                amet, consectetur,"</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class=" d-none d-md-block">
-                            <h5>Mais info</h5>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                mollit anim id est laborum."</p>
-                        </div>
+
+    <div class=" position-absolute d-flex" id="equipe-img">
+        <img src="/img/forms/Forma - Quem somos.svg" width="800" alt="">
+    </div>
+
+    <div class="col-8" id="abouts">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" id="carrossel">
+                <div class="carousel-item active">
+                    <div class=" d-none d-md-block" >
+                        <h5>Quem Somos?</h5>
+                        <p>O Animais Universitários é um projeto voluntário que dá assistência a animais em estado de vulnerabilidade no Campus do Pici, nosso maior objetivo é encontrar um lar para cada animal abandonado da faculdade. <br> <br>
+
+                        Para isso, ao resgatarmos um animal vulnerável, primeiro damos todo o suporte necessário para sua reabilitação. Assim que o animal estiver recuperado e saudável o disponibilizamos para encontrar seu novo lar.
+                        </p>
                     </div>
                 </div>
-                <div class="">
-                    <a class=" carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="rol-1 carousel-control-next-icon p-3" id="button2"></span>
-                    </a>
+                <div class="carousel-item">
+                    <div class=" d-none d-md-block">
+                        <h5>Mais info</h5>
+                         <p>O Animais Universitários é um projeto voluntário que dá assistência a animais em estado de vulnerabilidade no Campus do Pici, nosso maior objetivo é encontrar um lar para cada animal abandonado da faculdade. <br> <br>
+
+                        Para isso, ao resgatarmos um animal vulnerável, primeiro damos todo o suporte necessário para sua reabilitação. Assim que o animal estiver recuperado e saudável o disponibilizamos para encontrar seu novo lar.
+                        </p>
+                    </div>
                 </div>
+            </div>
+            <div class="botao">
+                <a class=" carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="rol-1 carousel-control-next-icon p-3" id="button2"></span>
+                </a>
             </div>
         </div>
     </div>
 
-    <!--  patinhas  -->
+    <!--  patinhas 
     <div class="position-absolute" id="patinhas-1">
         <svg id="setas-color" width="150" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
             <title>Elementos - Patinhas</title>
@@ -150,9 +170,9 @@
         </svg>
     </div>
 
-    <div class="container-fluid position-absolute mx-0" id="forma-1">
-        <img src="/img/forms/Forma 2.svg" alt="">
-    </div>
+     -->
+
+   
     <!----------------------------------------------------------------------------->
 
     <!--  Filtro apresentação  -->
@@ -367,9 +387,7 @@
         </div>
     </div>
 
-    <div class="container-fluid position-absolute mx-0" id="forma-1">
-        <img src="/img/forms/Forma 3.svg" height="30%" alt="">
-    </div>
+    
 
     <!--  Filtro para gatos  -->
 

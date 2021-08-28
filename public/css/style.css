@@ -17,10 +17,29 @@ nav{
 
 }
 
-#forma-1{
+
+
+/* formas do background */
+.formas{
+  position: absolute;
   z-index: -2;
-  right: 0px;
+  right: 0;
 }
+
+#forma-1{
+  top: -10%;
+}
+
+
+#forma-2{
+  top: 150%;
+}
+
+#forma-3{
+  top: 200%;
+}
+
+
 
 #logo-main{
   fill: white;
@@ -31,6 +50,12 @@ nav{
   right: 0;
   top: -5%;
   z-index: -1;
+}
+
+#bloco-main{
+  margin-top: 100px;
+  margin-left: -250px;
+
 }
 
 #titulo-main{
@@ -78,27 +103,36 @@ nav{
   color: #FFFFFF;
   font-weight: 500;
   background-color: #CE2501;
-  
+
 }
 
 /*  Sobre  */
 
 
-#patinhas-1{
-  top:1000px;
-}
 #equipe-img{
   z-index: +1;
-  position: absolute;
-  right: 11%;
+  position: fixed;
+  top: 900px;
+  left: 0px;
 }
+
+#abouts{
+
+  margin-top: 100px;
+  margin-left: 450px;
+  margin-bottom: 300px;
+
+}
+
 #carrossel{
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
   
 }
 #carrossel h5{
   font-family:'Lilita One', cursive;
-  font-size: 30px;
+  font-size: 70px;
   color:#CE2501 ;
 }
 
@@ -107,11 +141,20 @@ nav{
   background-color: #FD5F2D;
   border-radius: 100%;
 }
+
+
+
+#patinhas-1{
+  top:1000px;
+}
+
 #patinhas-1{
   position: absolute;
   left: 70%;
 
 }
+
+
 
 /*  Catalogo  */
 
@@ -314,11 +357,7 @@ img{
   color: #FFC222;
   fill: #FFC222;
 }
-.cls-1 {
-  fill: #FFC222;
- font-size: 85px;
-font-family: GochiHand-Regular, Gochi Hand;
-}
+
 #seta2{
   fill: #FFC222;
   position: absolute;
