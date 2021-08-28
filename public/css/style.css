@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
@@ -6,9 +6,15 @@
 
 nav{ 
   background-color: #FD5F2D;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins Medium', sans-serif;
   color: white;
-  font-size: 15px;
+  font-size: 30px;
+}
+
+#navbarText{
+
+  padding-right: 70px;
+
 }
 
 #forma-1{
@@ -22,7 +28,7 @@ nav{
 /*  pagina inicial  */
 
 #mainimage{
-  left: 62%;
+  right: 0;
   top: -5%;
   z-index: -1;
 }
@@ -30,32 +36,49 @@ nav{
 #titulo-main{
   color: #CE2501;
   font-family:'Lilita One', cursive;
-  font-size: 50px;
-  line-height: 0.75;
+  font-size: 100px;
+  line-height: 1;
+
 }
 
 #subtitulo-1-main{
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 30px;
   
 }
 
 #button1{
   color: #CE2501;
-  padding: 10px;
+
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
   margin: 30px;
+
   margin-left: 0px;
   background-color:none;
-  border: 3px;
+  border: 5px;
   border-color: #CE2501;
   border-style: solid;
-  font-size: 18px ;
+  font-size: 27px ;
   border-radius: 15px;
+
   font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+
+  box-shadow: 0px 15px 20px -15px rgba(0,0,0,0.5);
+
 }
 
 #button1:hover{
-  background-color: #FD5F2D;
+
+  color: #FFFFFF;
+  font-weight: 500;
+  background-color: #CE2501;
+  
 }
 
 /*  Sobre  */
