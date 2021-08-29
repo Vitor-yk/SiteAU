@@ -1,14 +1,16 @@
 <div class="d-flex" id="fotos-perfil">
-    <div class="col-6 d-flex p-5">
-        <div class="d-flex-block col-3">
-            <img src="/img/placeholder.png" width="75px" height="75px" alt="">
-            <img src="/img/placeholder.png" width="75px" height="75px" alt="">
-            <img src="/img/placeholder.png" width="75px" height="75px" alt="">
-            <img src="/img/placeholder.png" width="75px" height="75px" alt="">
+    <div class="col-3 d-flex p-5">
+        <!--   fotos multiplas   -->
+        <div class="d-flex-block col-1" id="perfil_subImg">
+            <img src="/img/placeholder.png" alt="">
+            <img src="/img/placeholder.png" alt="">
+            <img src="/img/placeholder.png" alt="">
+            <img src="/img/placeholder.png" alt="">
         </div>
-        <img src=" /img/placeholder.png" width="400px" alt="">
+        <!--  foto principal  -->
+        <img src=" /img/placeholder.png" id="perfil_Img" alt="">
     </div>
-    <div class="col-6 p-5">
+    <div class="col-9 p-5" id="perfil_textos">
         <div class="d-flex">
             <h2 class="apresentacao-perfil">Oi, meu nome é </h2>
             <h2 class="apresentacao-perfil-nome px-2">Banguela</h2>
@@ -25,10 +27,10 @@
             </div>
         </div>
         <h4 class="apresentacao-perfil-historia">Essa é minha História</h4>
-        <h6 class="" id="text-perfil">Essa é minha História
+        <h6 class="" id="text-perfil">
             Banguela está procurando um treinador de gatinhos que lhe dê muito amor e carinho! Assim como seu xará
             Fúria
-            da Noite, ele é muito amoroso, companheiro e super sapeca.
+            da Noite, ele é muito amoroso, companheiro e super sapeca.<br><br>
             Esse gatinho foi resgatado no campus do Pici em um estado muito crítico de desnutrição e desnutrição,
             além
             de feridas que pareciam ser decorrentes de brigas. No entanto, assim como o bravo Banguela do filme, ele
@@ -41,20 +43,20 @@
 
 
 
-<!--    forma perfil do animal  
-<div class="container-fluid position-absolute mx-0" id="forma-1">
-    <img src="/img/forms/Forma Perfil animal.svg" alt="">
-</div>
-<div class="p-5"></div>
--->
-
+<svg class="formas" id="forma-5" data-name="forma 5"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600">
+    <defs>
+        <style>.cls-1{fill:#f5f5f5;}</style>
+    </defs>
+    <title>Forma Perfil animal</title>
+    <path class="cls-1" d="M1920,0c-27.21,2.47-53.91,5-80.51,7.47C1623.31,27.74,1399.76,48.71,960,48.71S296.69,27.74,80.51,7.47C53.91,5,27.21,2.47,0,0V600c27.21-2.47,53.91-5,80.51-7.47C296.69,572.26,520.24,551.29,960,551.29s663.31,21,879.49,41.24c26.6,2.49,53.3,5,80.51,7.47Z"/>
+</svg>
 
 
 <!--   Meus dados   -->
 
 
 <div class=" d-flex" id="perfil-info-div">
-    <div class="col-4">
+    <div class="col-4" id="perfil-info-colunas">
         <ul>
             <div class="caracteristicas-geral"> Meus Dados</div>
             <li>
@@ -213,13 +215,12 @@
             <li>
                 <div class="d-flex">
                     <div>
-                        <svg id="setas-color" width="15px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 240 200">
-                            <title>Filtro - Disponivel</title>
-                            <path
-                                d="M235.88,134.26,130.11,4.2a7.61,7.61,0,0,0-.9-.88,14.41,14.41,0,0,0-18.39,0,7.44,7.44,0,0,0-.93.89L4.12,134.26c-3.3,4.05-3.38,7.79-.22,10.5,3.32,2.84,6.93,2.09,10.45-2.2s7-8.56,10.47-12.84L33.66,119c1.37,7.72,2.57,14.45,3.76,21.18,3.35,18.92,6.73,37.83,10,56.76A4.83,4.83,0,0,0,48.83,200h29a9.38,9.38,0,0,0,0-1.52c-2.55-17.38-5-34.76-7.7-52.11-2.49-16.15,7.22-28.56,23.41-28.87,8.82-.17,44.14-.17,53,0,16.19.31,25.9,12.72,23.41,28.87-2.68,17.35-5.15,34.73-7.7,52.11a9.38,9.38,0,0,0,0,1.52h29a4.83,4.83,0,0,0,1.42-3.11c3.26-18.93,6.64-37.84,10-56.76,1.19-6.73,2.39-13.46,3.76-21.18l8.84,10.77q5.23,6.42,10.47,12.84c3.52,4.29,7.13,5,10.45,2.2C239.26,142.05,239.18,138.31,235.88,134.26Z" />
+                        <svg id="setas-color" width="15px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                            <title>Dados - Endereço</title>
+                            <path d="M171.22,74.33a77.6,77.6,0,0,1-11.86,40.6c-15.63,25.06-31.43,50-47.16,75-8.39,13.34-16.38,13.43-24.68.17C71,163.74,53.7,137.83,38.32,110.82,17.94,75,30.62,25.29,72.46,6.14,103.57-8.09,140.82,2.59,161,36.37,168.07,48.18,170.87,61.1,171.22,74.33Zm-44.45.3c0-15.29-12.11-28-26.65-28S73.43,59.34,73.44,74.59s12.2,28.05,26.64,28S126.78,89.87,126.77,74.63Z"/>
                         </svg>
                     </div>
+                    
                     <div class=" d-block">
                         <label for="endereço-rua">Rua/Av.</label>
                         <input type="text" id="rua/av" name="rua/av" placeholder="Ex: Rua Calos Severo"><br><br>
@@ -237,7 +238,7 @@
     <!--   Minha personalidade   -->
 
 
-    <div class="col-4">
+    <div class="col-4" id="perfil-info-colunas">
         <ul>
             <div class="caracteristicas-geral"> Minha Personalidade</div>
             <h6>Temperamento:</h6>
@@ -320,8 +321,8 @@
 
     <!--   Minhas caracteristicas   -->
 
-
-    <div class="col-4">
+ 
+    <div class="col-4" id="perfil-info-colunas">
         <ul>
             <div class="caracteristicas-geral"> Minhas Caracteristicas</div>
             <h6>Vivo bem com:</h6>
@@ -385,7 +386,7 @@
 
 <!--    botao de enviar      -->
 <div class="text-center pt-3">
-    <button id="button-salvar"><a href="#">SALVAR</a></button>
+    <button class="btn btn-none  btn-lg " id="button_inicial"><a href="/formulario" ><a href="#">SALVAR</a></button>
 </div>
 
 

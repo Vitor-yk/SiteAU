@@ -39,7 +39,15 @@
 }
 
 #forma-3{
-  top: 200%;
+  top: 250%;
+}
+
+#forma-4{
+  top: 310%;
+}
+
+#forma-5{
+  top: 90%;
 }
 
 
@@ -72,17 +80,17 @@
   
 }
 
-#button1{
+
+#button_inicial{
   color: #CE2501;
 
   padding: 15px;
   padding-left: 20px;
   padding-right: 20px;
 
-
   margin: 30px;
-
   margin-left: 0px;
+
   background-color:none;
   border: 5px;
   border-color: #CE2501;
@@ -97,12 +105,24 @@
 
 }
 
-#button1:hover{
+
+#button_inicial:hover{
 
   color: #FFFFFF;
   font-weight: 500;
   background-color: #CE2501;
 
+}
+
+#button_inicial a{
+  color: #CE2501;
+  text-decoration: none;
+
+}
+
+#button_inicial:hover a{
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 /*  Sobre  */
@@ -343,6 +363,15 @@ img{
 }
 
 
+
+.margin-catalogo{
+
+  margin-top: 730px;
+
+}
+
+
+
 /* Style the buttons */
 .btn {
   border: none;
@@ -365,7 +394,7 @@ img{
 }
 
 
-/*  catalogo slides  */
+/*  catalogo slides CAHORROS */
 
 #container {
 
@@ -443,25 +472,69 @@ img{
 
 /*  perfil do animal  */
 
+#fotos-perfil{
+  margin-top: 70px;
+}
+
 #fotos-perfil img{
-border-radius: 20px;
-padding-top: 5px;
+  border-radius: 20px;
+}
+
+#perfil_Img{
+  width: 650px;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+#perfil_subImg{
+
+  margin-left: -300px;
+  margin-right: 140px;
+
+}
+
+#perfil_subImg img{
+
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 23px;
+}
+
+#perfil_textos{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 300px;
+
 }
 
 .apresentacao-perfil{
-  font-weight: bold;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 700;
+
 }
 .apresentacao-perfil-nome{
+  margin-top: 10px;
   color: #CE2501;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 700;
 }
+
 .apresentacao-perfil-historia{
-  font-weight:bold;
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 
 #text-perfil{
-  height: 210px;
+  font-size: 22px;
+  font-weight: 500;
+  height: 420px;
+  line-height: 1.5;
   overflow:auto;
 }
 
@@ -479,19 +552,39 @@ background-color: white;
 
 #perfil-info-div{
   font-family: 'Poppins', sans-serif;
+  margin: 120px 100px 50px -200px;
+
+ 
+}
+
+#perfil-info-div svg{
+  fill: #FFC222;
+  margin-right: 5px;
+  width: 20px;
+ 
+}
+
+#perfil-info-colunas{
+  margin-right: 200px ;
+
 }
 
 #perfil-info-div li{
   list-style: none;
-  font-size: 12px;
+  font-size: 22px;
+  font-weight: 500;
   padding-top: 5px;
 }
 #perfil-info-div h6{
-  font-size: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: -5px;
 }
 .caracteristicas-geral{
-  font-weight: bold;
-  color:red;
+  font-size: 25px;
+  font-weight: 700;
+  color: #CE2501;
 }
 
 #forma-perfil{
@@ -576,6 +669,13 @@ footer svg{
 
 
 /*  partes  */
+
+#seta-adotar{
+  margin-top: -30px;
+  margin-left: 100px;
+  width: 150px;
+  fill: #C5C5C5;
+}
 
 #setas-color2{
   fill: #C5C5C5;
