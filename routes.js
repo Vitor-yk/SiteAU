@@ -14,6 +14,9 @@ router.get('/about', (req, res) => {
 router.get('/perfil', (req, res) => {
     res.render('pages/perfil');
 });
+router.get('/formulario', (req, res) => {
+    res.render('pages/formulario');
+});
 
 router.get('/perfil-adm', (req, res) => {
     res.render('pages/perfil-adm');
