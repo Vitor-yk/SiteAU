@@ -4,9 +4,10 @@
 
 /*  barra de navegação  */
 
-nav{ 
+#nav{ 
   background-color: #FD5F2D;
-  font-family: 'Poppins Medium', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   color: white;
   font-size: 30px;
 }
@@ -17,6 +18,9 @@ nav{
 
 }
 
+#logo-main{
+  fill: white;
+}
 
 
 /* formas do background */
@@ -30,9 +34,8 @@ nav{
   top: -10%;
 }
 
-
 #forma-2{
-  top: 150%;
+  top: 170%;
 }
 
 #forma-3{
@@ -40,10 +43,6 @@ nav{
 }
 
 
-
-#logo-main{
-  fill: white;
-}
 /*  pagina inicial  */
 
 #mainimage{
@@ -111,14 +110,15 @@ nav{
 
 #equipe-img{
   z-index: +1;
-  position: fixed;
+  position: absolute;
   top: 900px;
   left: 0px;
+
 }
 
 #abouts{
 
-  margin-top: 100px;
+  margin-top: 120px;
   margin-left: 450px;
   margin-bottom: 300px;
 
@@ -136,13 +136,27 @@ nav{
   color:#CE2501 ;
 }
 
-#button2{
-  color: #FD5F2D;
-  background-color: #FD5F2D;
-  border-radius: 100%;
+.botao{
+  margin-top: -300px;
+  margin-left: 850px;
 }
 
+#seta{
 
+  margin-top: 15px;
+  margin-left: 17px;
+  fill: white;
+  width: 30px;
+}
+
+#dot{
+  height: 60px;
+  width: 60px;
+  background-color: #FD5F2D;
+  border-radius: 50%;
+  display: inline-block;
+
+}
 
 #patinhas-1{
   top:1000px;
@@ -158,28 +172,19 @@ nav{
 
 /*  Catalogo  */
 
-#text-catalogo{
+#text-catalogo h1{
   font-family:'Lilita One', cursive;
-  font-size: 30px;
+  font-size: 100px;
   color:#CE2501 ;
   
 }
 #text-catalogo h3{
   color: black;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 30px;
   
 }
-#cachorro-titulo{
-  color: #CE2501;
-  font-size: 30px;
-}
-
-#catalogo-caes{
-  font-family: 'Poppins', sans-serif;
-}
-
-
 
 
 
@@ -236,18 +241,54 @@ img{
 }
 
 #myBtnContainer{
-  background-color: white;
-  fill: gray;
-  height: 50px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
 #myBtnContainer p{
-  font-size: 10px;
+  font-size: 18px;
   padding: 0px;
 }
 
 
+#filtro-body{
+
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  height: 120px;
+  background-color: white;
+  fill: gray;
+}
+
+#animal-titulo{
+  color: #CE2501;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin: 10px 120px 0px -300px;
+}
+
+#filtro-custom{
+  color: #CE2501;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+#icones-filtro{
+  fill: gray;
+  margin-top: 25px;
+}
+
+#barras-filtro{
+  margin: 0px 10px 0px 10px;
+  height: 75px;
+}
+
 #content {
-  
   width: 250px;
   background-color: none;
 }
@@ -294,179 +335,24 @@ img{
   grid-auto-flow: column;
 }
 
-#filtro-custom{
-  color: #CE2501;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-}
-
-
 
 /* Style the buttons */
 .btn {
   border: none;
   outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #ddd;
   fill: #CE2501;
+  font-weight: 600;
+
 }
 
-.btn.active {
-  background-color: white;
+.btn:focus {
   fill: #CE2501;
+  font-weight: 600;
 }
-
-/*     quero  ajudar      */
-
-
-.icon1{
-  fill: #FD5F2D;
-}
-#text-mensal{
-  color: #FD5F2D;
-}
-#q-ajudar-title{
-  font-family: 'Lilita One', cursive;
-  color: #FD5F2D;
-}
-#b-doacoes{
-  color: #CE2501;
-  width: 150px;
-  height: 50px;
-  border: 2px;
-  border-style: solid;
-  border-color:#CE2501 ;
-  border-radius: 15px;
-  background-color: white;
-}
-
-#b-doacoes a{
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  color: #CE2501;
-}
-#b-doacoes:hover{
-  background-color: #FD5F2D;
-}
-#setas-color{
-  color: #FFC222;
-  fill: #FFC222;
-}
-
-#seta2{
-  fill: #FFC222;
-  position: absolute;
-  left: 70%;
-}
-
-
-/*    local     */
-
-#local-div h4{
-  padding-left: 15px;
-}
-
-#local-div{
-  padding: 20px;
-}
-
-#local-div p{
-  font-size: 12px;
-}
-
-/*    bazar   */
-
-.bazar-img{
-  position: absolute;
-  left:-20px;
-}
-#bazar-div{
-font-family: 'Poppins', sans-serif;
-}
-#bazar-div button{
-  font-size: 20px;
-}
-#bazar-div svg{
-  fill: #FD5F2D;
-}
-
-/*   Rifas   */
-
-#rifa-div-forma svg{
-  position: absolute;
-  left: 24%;
-}
-
-#rifa-div svg{
-  fill: #FD5F2D;
-}
-
-#buttons-alt{
-  color: #CE2501;
-  width: 150px;
-  height: 50px;
-  border: 2px;
-  border-style: solid;
-  border-color:#CE2501 ;
-  border-radius: 15px;
-  background-color: white;
-}
-
-#buttons-alt a{
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  color: #CE2501;
-}
-
-
-/*   voluntario  */
-
-
-#voluntario-div svg{
-  fill: #FD5F2D;
-}
-
-/*    footer    */
-footer{
-  color: #CE2501;
-}
-footer svg{
-  fill: #CE2501;
-}
-
-#footer-main-form{
-  margin: 0%;
-  position: absolute;
-}
-#footer-main{
-  position: absolute;
-  left:-15px;
-  z-index: -1;
-}
-#redes-div{
-position: absolute;
-top: 200px;
-left: 25%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*  perfil do animal  */
@@ -527,18 +413,7 @@ background-color: white;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*Perfil animal*/
 
 #button-adotar{
   color: #CE2501;
@@ -563,6 +438,28 @@ background-color: white;
 }
 
 
+/*    footer    */
+footer{
+  color: #CE2501;
+}
+footer svg{
+  fill: #CE2501;
+}
+
+#footer-main-form{
+  margin: 0%;
+  position: absolute;
+}
+#footer-main{
+  position: absolute;
+  left:-15px;
+  z-index: -1;
+}
+#redes-div{
+  position: absolute;
+  top: 200px;
+  left: 25%;
+}
 
 
 
