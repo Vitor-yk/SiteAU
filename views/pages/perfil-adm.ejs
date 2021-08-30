@@ -16,7 +16,7 @@
             <h2 class="apresentacao-perfil-nome px-2">Banguela</h2>
             <div class="d-flex px-3 pt-2">
                 <a href="#">
-                    <svg id="setas-color2" width="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+                    <svg id="pontos_edicao" width="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 200 200">
                         <title>Opções</title>
                         <circle cx="100" cy="25" r="25" />
@@ -56,7 +56,7 @@
 
 
 <div class=" d-flex" id="perfil-info-div">
-    <div class="col-4" id="perfil-info-colunas">
+    <div class="col-5" id="perfil-info-colunas-adm">
         <ul>
             <div class="caracteristicas-geral"> Meus Dados</div>
             <li>
@@ -75,14 +75,14 @@
                         <path
                             d="M0,86.25c.11-10.34,1.89-18,10-22s15.55-1.09,21.9,4.16C45.57,79.69,52.49,94.05,49.59,112c-2.07,12.86-12.81,18.66-24.6,12.89C8.26,116.71,1.36,102,0,86.25Z" />
                     </svg>
-                    <div class="px-2">
-                        <label class="container-edit ">Cachorro
+                    <div class="px-2" id="container-edit-style">
+                        <label class="container-edit"><p>Cachorro</p>
                             <input type="radio" name="Especie" value="Cachorro">
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div class="">
-                        <label class="container-edit ">Gato
+                    <div class="" id="container-edit-style">
+                        <label class="container-edit"><p>Gato</p>
                             <input type="radio" name="Especie" value="Gato">
                             <span class="checkmark"></span>
                         </label>
@@ -90,7 +90,7 @@
                 </div>
             </li>
             <li>
-                <div class="d-flex">
+                <div class="d-flex" id="container-edit-margin">
                     <svg id="setas-color" width="15px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 200 200">
                         <title>Filtro - Tamanho</title>
@@ -103,28 +103,30 @@
                         <path
                             d="M162.37,187.38c-9.32,0-18.63.05-27.94,0-5.6,0-9.07-4.64-9.2-12-.15-7.89,3.07-12.76,9.06-12.81q28.16-.22,56.32,0c5.74,0,9.5,5.43,9.38,12.63s-3.93,12.12-9.68,12.15C181,187.42,171.68,187.38,162.37,187.38Z" />
                     </svg>
-                    <div class="px-2">
-                        <label class="container-edit ">Pequeno
+
+                    <div class="px-2" id="container-edit-style">
+                        <label class="container-edit "><p>Pequeno</p>
                             <input type="radio" name="Tamanho" value="Pequeno">
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div class="px-1">
-                        <label class="container-edit ">Medio
+                    <div class="px-1" id="container-edit-style">
+                        <label class="container-edit "><p>Medio</p>
                             <input type="radio" name="Tamanho" value="Medio">
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div class=" px-2">
-                        <label class="container-edit ">Grande
+                    <div class=" px-2" id="container-edit-style">
+                        <label class="container-edit "><p>Grande</p>
                             <input type="radio" name="Tamanho" value="Grande">
                             <span class="checkmark"></span>
                         </label>
                     </div>
+
                 </div>
             </li>
             <li>
-                <div class="d-flex">
+                <div class="d-flex" id="container-edit-margin">
                     <svg id="setas-color" width="15px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 200 200">
                         <title>Filtro - Macho e Femea</title>
@@ -133,14 +135,14 @@
                         <path
                             d="M49.68,179.05c-4.64,0-8.75.06-12.86,0-5.77-.12-10.08-3.24-11.61-8.27A11.63,11.63,0,0,1,36,155.62c3.78-.14,7.57,0,11.35,0h2.19c0-4.44,0-8.67-.07-12.89,0-.47-1-1.17-1.56-1.32a57.94,57.94,0,0,1-24.54-12.6c-11.61-10-18.86-22.62-20.59-37.9C0,66.81,8.78,47.46,28.46,33.53,42.26,23.76,57.9,21,75,24.34c-.79.53-1.27.88-1.78,1.18A71.46,71.46,0,0,0,49.39,47.68a5.93,5.93,0,0,1-2.2,1.86C35.78,55.23,28.46,64.07,26.12,76.75a36.76,36.76,0,1,0,72.94,4.74,35.69,35.69,0,0,0-4.3-15.57c-.46-.87-.94-1.74-1.47-2.72a25.07,25.07,0,0,1,9.91-4,26.34,26.34,0,0,1,13.36.83,3.42,3.42,0,0,1,1.87,1.71,60,60,0,0,1-43.52,80c-.59.13-1.15.31-1.85.5v13.34H77c3.25,0,6.5,0,9.76,0,6.79.09,12,5,12,11.47A11.74,11.74,0,0,1,87,179c-4,.13-8,0-12,0H72.93c0,3,0,5.89,0,8.78a11.35,11.35,0,0,1-4.74,9.8,11.13,11.13,0,0,1-11.68,1.27,10.59,10.59,0,0,1-6.78-9.32C49.48,186.18,49.68,182.73,49.68,179.05Z" />
                     </svg>
-                    <div class="px-2">
-                        <label class="container-edit ">Macho
+                    <div class="px-2" id="container-edit-style">
+                        <label class="container-edit "><p>Macho</p>
                             <input type="radio" name="Genero" value="Macho">
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div class="px-3">
-                        <label class="container-edit ">Femea
+                    <div class="px-3" id="container-edit-style">
+                        <label class="container-edit "><p>Femea</p>
                             <input type="radio" name="Genero" value="Femea">
                             <span class="checkmark"></span>
                         </label>
@@ -150,21 +152,21 @@
 
 
             <li>
-                <div class="d-flex">
+                <div class="d-flex" id="container-edit-margin">
                     <svg id="setas-color" width="15px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 240 200">
                         <title>Filtro - Disponivel</title>
                         <path
                             d="M235.88,134.26,130.11,4.2a7.61,7.61,0,0,0-.9-.88,14.41,14.41,0,0,0-18.39,0,7.44,7.44,0,0,0-.93.89L4.12,134.26c-3.3,4.05-3.38,7.79-.22,10.5,3.32,2.84,6.93,2.09,10.45-2.2s7-8.56,10.47-12.84L33.66,119c1.37,7.72,2.57,14.45,3.76,21.18,3.35,18.92,6.73,37.83,10,56.76A4.83,4.83,0,0,0,48.83,200h29a9.38,9.38,0,0,0,0-1.52c-2.55-17.38-5-34.76-7.7-52.11-2.49-16.15,7.22-28.56,23.41-28.87,8.82-.17,44.14-.17,53,0,16.19.31,25.9,12.72,23.41,28.87-2.68,17.35-5.15,34.73-7.7,52.11a9.38,9.38,0,0,0,0,1.52h29a4.83,4.83,0,0,0,1.42-3.11c3.26-18.93,6.64-37.84,10-56.76,1.19-6.73,2.39-13.46,3.76-21.18l8.84,10.77q5.23,6.42,10.47,12.84c3.52,4.29,7.13,5,10.45,2.2C239.26,142.05,239.18,138.31,235.88,134.26Z" />
                     </svg>
-                    <div class="px-2">
-                        <label class="container-edit ">Adotado
+                    <div class="px-2" id="container-edit-style">
+                        <label class="container-edit"><p>Adotado</p>
                             <input type="radio" name="Disponibilidade" value="Adotado">
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div class="px-1">
-                        <label class="container-edit ">Não Adotado
+                    <div class="px-1" id="container-edit-style">
+                        <label class="container-edit "><p>Não Adotado</p>
                             <input type="radio" name="Disponibilidade" value="Nadotado">
                             <span class="checkmark"></span>
                         </label>
@@ -174,7 +176,7 @@
 
 
             <li>
-                <div class="d-flex">
+                <div class="d-flex pt-3" id="container-edit-margin">
                     <svg id="setas-color" width="15px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 200 200">
                         <title>Dados - Idade</title>
@@ -187,24 +189,42 @@
                         <path
                             d="M9.09,65.26V181.82A18.23,18.23,0,0,0,27.27,200H172.73a18.23,18.23,0,0,0,18.18-18.18v-9.09h0V65.26ZM119.68,97.75l-.08.42q-1.36,17.35-2.63,40.33t-1.1,39.74c-.06.84-.83,1.56-2.32,2.15a16.89,16.89,0,0,1-5.38,1.06,14.2,14.2,0,0,1-5.63-.76,4.64,4.64,0,0,1-3.17-3.47q-1.28-8.64-1.27-27.85t1.18-37.91a4.45,4.45,0,0,1,.09-.93c0-.45,0-.69,0-.72a1.9,1.9,0,0,0-.81.29l-.51.34c-1,.57-2.06,1.1-3.13,1.61-2.2,1.24-4.43,2.46-6.68,3.64-.57.23-1.42-.14-2.54-1.1a17.39,17.39,0,0,1-3.3-4,22,22,0,0,1-1.87-3.51,10.49,10.49,0,0,1-.84-3.34,2.42,2.42,0,0,1,1-2.29l6-3.89q4.32-2.79,9.52-6t9.4-5.5q4.18-2.33,5.29-2.33a10.89,10.89,0,0,1,3.64.89,18.17,18.17,0,0,1,4.06,2.16,3.43,3.43,0,0,1,1.78,2.62Z" />
                     </svg>
-                    <div class="px-0">
+                    <div class="px-0" >
                         <label class="container-edit ">
                             <select id="idade-anos" name="idade-anos">
+                                
+                                <option value="0">0 anos</option>
                                 <option value="1">1 ano</option>
                                 <option value="2">2 anos</option>
                                 <option value="3">3 anos</option>
                                 <option value="4">4 anos</option>
+                                <option value="5">5 anos</option>
+                                <option value="6">6 anos</option>
+                                <option value="7">7 anos</option>
+                                <option value="8">8 anos</option>
+                                <option value="9">9 anos</option>
+                                <option value="10">10 anos</option>
+                                <option value="11">11 anos</option>
                             </select>
                         </label>
                     </div>
                     <div class="px-1">e</div>
+
                     <div class="px-0">
                         <label class="container-edit ">
                             <select id="idade-meses" name="idade-meses">
+                                <option value="0">0 meses</option>
                                 <option value="1">1 mes</option>
                                 <option value="2">2 meses</option>
                                 <option value="3">3 meses</option>
                                 <option value="4">4 meses</option>
+                                <option value="5">5 meses</option>
+                                <option value="6">6 meses</option>
+                                <option value="7">7 meses</option>
+                                <option value="8">8 meses</option>
+                                <option value="9">9 meses</option>
+                                <option value="10">10 meses</option>
+                                <option value="11">11 meses</option>
                             </select>
                         </label>
                     </div>
@@ -213,7 +233,7 @@
 
 
             <li>
-                <div class="d-flex">
+                <div class="d-flex" >
                     <div>
                         <svg id="setas-color" width="15px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
                             <title>Dados - Endereço</title>
@@ -221,11 +241,11 @@
                         </svg>
                     </div>
                     
-                    <div class=" d-block">
+                    <div class=" d-block" id="endereco-rua">
                         <label for="endereço-rua">Rua/Av.</label>
                         <input type="text" id="rua/av" name="rua/av" placeholder="Ex: Rua Calos Severo"><br><br>
                     </div>
-                    <div class=" d-block">
+                    <div class=" d-block" id="endereco-bairro">
                         <label for="endereço-bairro">Bairro</label>
                         <input type="text" id="bairro" name="bairro" placeholder="Ex: Bairro Farias Brito"><br><br>
                     </div>
@@ -238,83 +258,97 @@
     <!--   Minha personalidade   -->
 
 
-    <div class="col-4" id="perfil-info-colunas">
+    <div class="col-4" id="perfil-info-colunas-adm">
         <ul>
             <div class="caracteristicas-geral"> Minha Personalidade</div>
             <h6>Temperamento:</h6>
+
             <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-temperamento"
-                        name="minha-caracteristica-temperamento" value="Docil">
-                    <label for="minha-caracteristica-temperamento"> Dócil</label><br>
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="temperamento_docil" name="temperamento" value="Docil">
+                        <label for="temperamento_docil"><p>Dócil</p></label>
+                    </div>
+
                     <div class="d-flex px-5">
-                        <input type="checkbox" id="minha-caracteristica-temperamento"
-                            name="minha-caracteristica-temperamento" value="Calmo">
-                        <label for="minha-caracteristica-temperamento"> Calmo</label><br>
+                        <input type="checkbox" id="temperamento_calmo" name="temperamento" value="Calmo">
+                        <label for="temperamento_calmo"><p>Calmo</p></label>
                     </div>
                 </div>
             </li>
-            <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-temperamento"
-                        name="minha-caracteristica-temperamento" value="Carente">
-                    <label for="minha-caracteristica-temperamento"> Carente</label><br>
+
+            <li class="colunas-checkbox">
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="temperamento_carente" name="temperamento" value="Carente">
+                        <label for="temperamento_carente"><p>Carente</p></label>
+                    </div>
+
                     <div class="d-flex px-4">
-                        <input type="checkbox" id="minha-caracteristica-temperamento"
-                            name="minha-caracteristica-temperamento" value="Brincalhao">
-                        <label for="minha-caracteristica-temperamento"> Brincalhão</label><br>
+                        <input type="checkbox" id="temperamento_brincalhao" name="temperamento" value="Brincalhao">
+                        <label for="temperamento_brincalhao"><p>Brincalhão</p></label>
                     </div>
                 </div>
             </li>
-            <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-temperamento"
-                        name="minha-caracteristica-temperamento" value="Divertido">
-                    <label for="minha-caracteristica-temperamento"> Divertido</label><br>
-                    <div class="d-flex px-3">
-                        <input type="checkbox" id="minha-caracteristica-temperamento"
-                            name="minha-caracteristica-temperamento" value="Timido">
-                        <label for="minha-caracteristica-temperamento"> Tímido</label><br>
+
+            <li class="colunas-checkbox">
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="temperamento_divertido" name="temperamento" value="Divertido">
+                        <label for="temperamento_divertido"><p>Divertido</p></label>
+                    </div>
+
+                    <div class="d-flex px-4">
+                        <input type="checkbox" id="temperamento_timido" name="temperamento" value="Timido">
+                        <label for="temperamento_timido"><p>Tímido</p></label>
                     </div>
                 </div>
             </li>
+
             <h6 class="pt-2">Sociavel com:</h6>
+            
             <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-sociavel" name="minha-caracteristica-sociavel"
-                        value="Gatos">
-                    <label for="minha-caracteristica-sociavel"> Gatos</label><br>
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="sociavel_gatos" name="sociavel" value="Gatos">
+                        <label for="sociavel_gatos"><p>Gatos</p></label>
+                    </div>
+
+                    <div class="d-flex px-5">
+                        <input type="checkbox" id="sociavel_criancas" name="sociavel" value="Criancas">
+                        <label for="sociavel_criancas"><p>Crianças</p></label>
+                    </div>
+                </div>
+            </li>
+
+            <li class="colunas-checkbox">
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="sociavel_filhotes" name="sociavel" value="Filhotes">
+                        <label for="sociavel_filhotes"><p>Filhotes</p></label>
+                    </div>
+
                     <div class="d-flex px-4">
-                        <input type="checkbox" id="minha-caracteristica-sociavel" name="minha-caracteristica-sociavel"
-                            value="Criancas">
-                        <label for="minha-caracteristica-sociavel"> Crianças</label><br>
+                        <input type="checkbox" id="sociavel_adultos" name="sociavel" value="Adultos">
+                        <label for="sociavel_adultos"><p>Adultos</p></label>
                     </div>
                 </div>
             </li>
-            <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-sociavel" name="minha-caracteristica-sociavel"
-                        value="Filhotes">
-                    <label for="minha-caracteristica-sociavel"> Filhotes</label><br>
-                    <div class="d-flex px-3">
-                        <input type="checkbox" id="minha-caracteristica-sociavel" name="minha-caracteristica-sociavel"
-                            value="Adultos">
-                        <label for="minha-caracteristica-sociavel"> Adultos</label><br>
+
+            <li class="colunas-checkbox">
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="sociavel_cachorros" name="sociavel" value="Cachorros">
+                        <label for="sociavel_cachorros"><p>Cachorros</p></label>
+                    </div>
+
+                    <div class="d-flex px-4">
+                        <input type="checkbox" id="sociavel_bebes" name="sociavel" value="Bebes">
+                        <label for="sociavel_bebes"><p>Bebes</p></label>
                     </div>
                 </div>
             </li>
-            <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-sociavel" name="minha-caracteristica-sociavel"
-                        value="Cachorros">
-                    <label for="minha-caracteristica-sociavel"> Cachorros</label><br>
-                    <div class="d-flex px-3">
-                        <input type="checkbox" id="minha-caracteristica-sociavel" name="minha-caracteristica-sociavel"
-                            value="Bebes">
-                        <label for="minha-caracteristica-sociavel"> Bebês</label><br>
-                    </div>
-                </div>
-            </li>
+
         </ul>
     </div>
 
@@ -322,63 +356,82 @@
     <!--   Minhas caracteristicas   -->
 
  
-    <div class="col-4" id="perfil-info-colunas">
+    <div class="col-5" id="perfil-info-colunas-adm">
         <ul>
             <div class="caracteristicas-geral"> Minhas Caracteristicas</div>
             <h6>Vivo bem com:</h6>
+            
             <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-geral-vivo-bem"
-                        name="minha-caracteristica-geral-vivo-bem" value="Casa">
-                    <label for="minha-caracteristica-geral-vivo-bem"> Casa
-                        <span class="checkmark2"></span>
-                    </label><br>
-                    <input type="checkbox" id="minha-caracteristica-geral-vivo-bem"
-                        name="minha-caracteristica-geral-vivo-bem" value="Sitio">
-                    <label for="minha-caracteristica-geral-vivo-bem"> Sítio</label><br>
-                </div>
-            <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-geral-vivo-bem"
-                        name="minha-caracteristica-geral-vivo-bem" value="Apartamento">
-                    <label for="minha-caracteristica-geral-vivo-bem"> Apartamento</label><br>
-                    <input type="checkbox" id="minha-caracteristica-geral-vivo-bem"
-                        name="minha-caracteristica-geral-vivo-bem" value="Nofrio">
-                    <label for="minha-caracteristica-geral-vivo-bem"> No Frio</label><br>
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="caracteristicas_casa" name="caracteristicas" value="Casa">
+                        <label for="caracteristicas_casa"><p>Casa</p></label>
+                    </div>
+
+                    <div class="px-5"></div><div class="d-flex px-5">
+                        <input type="checkbox" id="caracteristicas_sitio" name="caracteristicas" value="Sitio">
+                        <label for="caracteristicas_sitio"><p>Sítio</p></label>
+                    </div>
                 </div>
             </li>
-            <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-geral-vivo-bem"
-                        name="minha-caracteristica-geral-vivo-bem" value="Casac/Quintal">
-                    <label for="minha-caracteristica-geral-vivo-bem"> Casa c/ Quintal</label><br>
-                    <input type="checkbox" id="minha-caracteristica-geral-vivo-bem"
-                        name="minha-caracteristica-geral-vivo-bem" value="noCalor">
-                    <label for="minha-caracteristica-geral-vivo-bem"> No Calor</label><br>
+
+            <li class="colunas-checkbox">
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="caracteristicas_apartamento" name="caracteristicas" value="Apartamento">
+                        <label for="caracteristicas_apartamento"><p>Apartamento</p></label>
+                    </div>
+
+                    <div class="d-flex px-5">
+                        <input type="checkbox" id="caracteristicas_nofrio" name="caracteristicas" value="No Frio">
+                        <label for="caracteristicas_nofrio"><p>No Frio</p></label>
+                    </div>
                 </div>
             </li>
+
+            <li class="colunas-checkbox">
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="caracteristicas_casaquintal" name="caracteristicas" value="Casa c/ Quintal">
+                        <label for="caracteristicas_casaquintal"><p>Casa c/ Quintal</p></label>
+                    </div>
+
+                    <div class="d-flex px-4">
+                        <input type="checkbox" id="caracteristicas_nocalor" name="caracteristicas" value="No Calor">
+                        <label for="caracteristicas_nocalor"><p>No Calor</p></label>
+                    </div>
+                </div>
+            </li>
+
             <h6 class="pt-2">Já estou:</h6>
+            
             <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-geral-estou" name="minha-caracteristica-geral-estou"
-                        value="Castrado">
-                    <label for="minha-caracteristica-gera-estoul"> Castadro</label><br>
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="saude_castrado" name="saude" value="Castrado">
+                        <label for="saude_castrado"><p>Castrado</p></label>
+                    </div>
                 </div>
             </li>
-            <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-geral-estou" name="minha-caracteristica-geral-estou"
-                        value="Vacinado">
-                    <label for="minha-caracteristica-gera-estoul"> Vacinado</label><br>
+
+            <li class="colunas-checkbox">
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="saude_vacinado" name="saude" value="Vacinado">
+                        <label for="saude_vacinado"><p>Vacinado</p></label>
+                    </div>
                 </div>
             </li>
-            <li>
-                <div class="d-flex">
-                    <input type="checkbox" id="minha-caracteristica-geral-estou" name="minha-caracteristica-geral-estou"
-                        value="Vermifugado">
-                    <label for="minha-caracteristica-gera-estoul"> Vermifugado</label><br>
+
+            <li class="colunas-checkbox">
+                <div class="d-flex" id="check-box">
+                    <div class="d-flex">
+                        <input type="checkbox" id="saude_vermifugado" name="saude" value="Vermifugado">
+                        <label for="saude_vermifugado"><p>Vermifugado</p></label>
+                    </div>
                 </div>
             </li>
+
         </ul>
     </div>
 </div>
@@ -386,16 +439,18 @@
 
 <!--    botao de enviar      -->
 <div class="text-center pt-3">
-    <button class="btn btn-none  btn-lg " id="button_inicial"><a href="/formulario" ><a href="#">SALVAR</a></button>
+    <button class="btn btn-none  btn-lg " id="button_inicial"><a href="/formulario" ><a href="#">SALVAR EDIÇÕES</a></button>
 </div>
 
 
 <!--      Relatorios      -->
+<div class="pt-5"></div>
+<div class="pt-5"></div>
 
 <div class="d-flex">
-    <div class="col-4"></div>
-    <div class="text-center d-flex">
-        <svg id="setas-color3" width="50px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+    <div class="col-2 m-4"></div>
+    <div class="d-flex">
+        <svg class="px-2" id="setas-color3" height="70px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 200 200">
             <title>Relatorio - Icon</title>
             <path
@@ -411,16 +466,22 @@
             <path
                 d="M65.89,110.9h0a6.62,6.62,0,0,0,4.71-2,6.55,6.55,0,0,0,1.94-4.7,6.65,6.65,0,0,0-2-4.74,6.86,6.86,0,0,0-4.76-1.91,6.64,6.64,0,0,0-6.66,6.71,6.54,6.54,0,0,0,2,4.71A6.77,6.77,0,0,0,65.89,110.9Z" />
         </svg>
-        <h2>Relatórios de Adotantes</h2>
+        <h1 class="d-flex" id="titulo-relatio">
+                Relatórios de 
+            <h1 id="titulo-relatio" style="color:#FD5F2D">
+                Adotantes
+            <h1>
+        </h1>
+    
     </div>
 </div>
 
 <!--     relatorios on       -->
-<div class="pt-5 d-flex">
+<div class="pt-5 d-flex" id="relatorios-style">
     <div class="px-3" id="container-de-relatorio">
         <a href="#">
             <div class="d-flex" id="container-de-relatorio-mini">
-                <svg id="setas-color3" width="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+                <svg id="setas-color3" width="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Relatorio - Aberto</title>
                     <path
@@ -434,7 +495,7 @@
                     <path
                         d="M59.16,89.85h81.65a9.29,9.29,0,0,0,1.29-.06,3.37,3.37,0,0,0,2.75-4.26c-.49-1.71-1.7-2.52-3.81-2.52H59.5A12.69,12.69,0,0,0,58,83a3.22,3.22,0,0,0-2.85,2.47,3.27,3.27,0,0,0,1,3.46A4,4,0,0,0,59.16,89.85Z" />
                 </svg>
-                <h5 class="pt-2">Pretendente 1</h5>
+                <h2 class="pt-2">Pretendente 1</h2>
             </div>
         </a>
     </div>
@@ -444,21 +505,15 @@
     <div class="px-3" id="container-de-relatorio-off">
         <a href="#">
             <div class="d-flex" id="container-de-relatorio-off-mini">
-                <svg id="setas-color2" width="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+                <svg id="setas-color2" width="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Relatorio - Aberto</title>
-                    <path
-                        d="M192.48,139.32q0-13.89,0-27.79,0-17.19,0-34.39a4.44,4.44,0,0,0-1.58-3.55L177.28,61.81l-9.88-8.54c-.44-.38-.9-.73-1.36-1.08s-.66-.49-1-.75c-.5-.42-1-.84-1.46-1.27l-1.11-1c-1.26-1.08-1.34-1.32-1.26-1.8a14.76,14.76,0,0,0,.07-3l0-.61a12.7,12.7,0,0,0-10.94-12.16,39,39,0,0,0-4.91-.19c-1,0-2,0-2.93,0a1.26,1.26,0,0,1-.45-.14c-5.27-4.51-10.5-9-15.74-13.59l-7.48-6.47-8.1-7a15.92,15.92,0,0,0-21.37-.1c-3.51,3-7,6-10.5,9.08l-5.13,4.46-2.49,2.15c-4.47,3.87-8.94,7.74-13.41,11.56a.52.52,0,0,1-.16.06c-1.17,0-2.32,0-3.54,0-.9,0-1.8,0-2.7,0A12.74,12.74,0,0,0,38.72,44.25c0,.47,0,.94,0,1.41,0,.82,0,1.59,0,2.28-.78.71-1.58,1.4-2.43,2.12-.64.55-1.29,1.09-1.92,1.65s-1.22,1.12-1.83,1.69-1.3,1.22-2,1.81c-1.48,1.29-3,2.55-4.46,3.82l-2.93,2.49-4.4,3.79q-4.69,4.05-9.42,8.07a4.9,4.9,0,0,0-1.83,4c.09,21.51.16,43.17.2,64.39,0,1.69,0,3.43-.08,5.11s-.09,3.24-.09,4.86q0,17.75,0,35.51a12.15,12.15,0,0,0,1.88,6.57A12.63,12.63,0,0,0,20.73,200H179.36a12.74,12.74,0,0,0,13.12-13.14q0-5.13,0-10.25l-.06-12q-.06-9.34-.09-18.69c0-1.1,0-2.21.07-3.31S192.48,140.41,192.48,139.32ZM75.77,31.35q10.38-9,20.77-18c2.42-2.09,4.49-2.08,6.94,0L119,26.81l5.24,4.54ZM119.85,129c-1.43-1.25-2.84-2.48-4.24-3.74a23,23,0,0,0-10.87-5.55,25.94,25.94,0,0,0-5-.5,22.56,22.56,0,0,0-14.58,5.38c-1.8,1.47-3.62,3-5.44,4.7q-8.93-8.32-17.91-16.59l-6.67-6.16c-1.56-1.43-3.18-2.92-4.73-4.4q0-28.63,0-57.28c0-1.39.25-1.63,1.63-1.63H148c1.38,0,1.63.24,1.63,1.62V62.18q0,16,0,32.06c0,1.48,0,3,.09,4.38,0,.9.05,1.8.07,2.69,0,.64-.06.71-.15.79q-11.76,10.83-23.51,21.69l-5.91,5.46Zm-71,42.72,33.42-29c1.9-1.65,3.8-3.32,5.69-5L92.21,134a11.34,11.34,0,0,1,15.55,0q17.08,14.81,34.15,29.64l9.92,8.62L167.68,186l2.6,2.25H29.73Zm22-34.71L19.25,181.8V89.28Zm-47.68-60L38.66,63.51V91.24ZM129.06,137l51.68-47.74v92.54Zm32.3-45.81V63.54l15.45,13.39Z" />
-                    <path
-                        d="M58.43,57.53c4.07,0,8.15,0,12.23,0h0c4.94,0,9.87,0,14.81,0,3.53,0,7.07-.07,10.6-.08,3,0,6,.08,9,.07,3.78,0,7.56-.07,11.34-.07,8.44,0,16.88.07,25.33.06a3.37,3.37,0,0,0,3.28-3,3.41,3.41,0,0,0-2.47-3.63,6.91,6.91,0,0,0-1.82-.18H82.42c-7.93,0-15.87,0-23.81,0a4.58,4.58,0,0,0-2.3.77,3.2,3.2,0,0,0-1.15,3.68A3.34,3.34,0,0,0,58.43,57.53Z" />
-                    <path
-                        d="M141.44,106a3.55,3.55,0,0,0,3.37-2.41,3.42,3.42,0,0,0-1.22-3.75,6.2,6.2,0,0,0-2.78-.68c-3.41,0-6.83,0-10.25,0-4,0-8-.09-12.08-.09q-19.82,0-39.63,0c-3.57,0-7.13.09-10.7.09-3.16,0-6.32-.07-9.48-.09a4.07,4.07,0,0,0-3.48,2.3c-.82,2.38,1,4.59,3.76,4.58,4.1,0,8.21-.06,12.31-.07H92.5v0H128C132.5,106,137,106,141.44,106Z" />
-                    <path
-                        d="M140.7,66.82H59.28a9.43,9.43,0,0,0-1.51.09,3.39,3.39,0,0,0-2.61,4.36c.53,1.61,1.72,2.4,3.69,2.4H140.6a10.87,10.87,0,0,0,1.4,0,3.4,3.4,0,0,0,2.82-4.4C144.28,67.56,143,66.82,140.7,66.82Z" />
-                    <path
-                        d="M59.16,89.85h81.65a9.29,9.29,0,0,0,1.29-.06,3.37,3.37,0,0,0,2.75-4.26c-.49-1.71-1.7-2.52-3.81-2.52H59.5A12.69,12.69,0,0,0,58,83a3.22,3.22,0,0,0-2.85,2.47,3.27,3.27,0,0,0,1,3.46A4,4,0,0,0,59.16,89.85Z" />
+                    <svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                        <title>Relatorio - Fechado</title>
+                        <path d="M191.29,47.68A25.55,25.55,0,0,0,166.92,30H119.64L75,30,62.21,30c-9.39,0-19.1,0-28.64,0h-.15A25.9,25.9,0,0,0,8.75,47.52a29.15,29.15,0,0,0-1.25,9.6q0,16.18,0,32.36v21q0,16.62,0,33.24v.15a26.55,26.55,0,0,0,.24,4.24c1.71,10.27,7.67,17.25,17.72,20.72a29.53,29.53,0,0,0,10,1.22h.33q17.58,0,35.17,0h95.42a28.38,28.38,0,0,0,7.75-1.08,25.37,25.37,0,0,0,18.35-24.25V92.1q0-17.41,0-34.82A30.17,30.17,0,0,0,191.29,47.68ZM166.42,155.09H33.47a10.37,10.37,0,0,1-9.53-5.39,9.45,9.45,0,0,1-1.34-5q0-21.45,0-42.92V60.63L39.68,76.18Q61.58,96.12,83.53,116a24.48,24.48,0,0,0,32.92,0c7.71-7,15.51-14.06,23-20.93l9.83-9,28-25.52v83.69a10.44,10.44,0,0,1-6.49,9.94A11.34,11.34,0,0,1,166.42,155.09Zm-56.83-53-2.92,2.65c-4.19,3.8-9.21,3.78-13.43-.06L28.68,45.9a10.88,10.88,0,0,1,4.7-1H166.22a11.78,11.78,0,0,1,5.08,1Z"/>
+                    </svg>
                 </svg>
-                <h5 class="pt-2">Pretendente 2</h5>
+                <h2 class="pt-2">Pretendente 2</h2>
             </div>
         </a>
     </div>

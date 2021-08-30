@@ -552,7 +552,7 @@ background-color: white;
 
 #perfil-info-div{
   font-family: 'Poppins', sans-serif;
-  margin: 120px 100px 50px -200px;
+  margin: 110px 100px 50px -200px;
 
  
 }
@@ -569,12 +569,26 @@ background-color: white;
 
 }
 
+#perfil-info-colunas-adm{
+  margin-right: 100px ;
+
+}
+
+#pontos_edicao{
+  fill: #c5c5c5;
+  margin-top: 10px;
+  margin-left: 140px;
+}
+
+
+
 #perfil-info-div li{
   list-style: none;
   font-size: 22px;
   font-weight: 500;
   padding-top: 5px;
 }
+
 #perfil-info-div h6{
   font-size: 22px;
   font-weight: 600;
@@ -1023,9 +1037,113 @@ input:checked + .slider:before {
 
 /*    perfil do animal editavel-adm      */
 
+#container-edit-margin{
+  margin-top: -30px;
+}
+
+#container-edit-style{
+  margin-top: 15px;
+}
+
+.container-edit p{
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: 5px;
+  margin-left: 22px;
+  margin-top: -29px;
+
+}
+
+#idade-anos, #idade-meses{
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-left: 10px;
+  margin-top: -29px;
+
+}
+
+#endereco-rua, #endereco-bairro {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+#endereco-rua input, #endereco-bairro input {
+  margin-top: -10px;
+}
+
+
+
+/* CHECK BOX PERSONALIDADE DE CARACTERISCAS */
+
+#check-box p{
+  margin-left: 25px;
+  margin-top: 9px;
+}
+
+.colunas-checkbox{
+  margin-top: -30px;
+}
+
+
+#check-box input[type=checkbox]{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-top: 15px;
+}
+
+#check-box input[type=checkbox]:before {
+
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+#check-box input[type=checkbox]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+#check-box input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.margin_out{
+  margin-left: -200px;
+}
+
+
+/*---*/
+
 .container-edit {
   display: inline;
   position: relative;
+
   padding-left: 20px;
   margin-bottom: 2px;
   cursor: pointer;
@@ -1035,6 +1153,8 @@ input:checked + .slider:before {
   -ms-user-select: none;
   user-select: none;
 }
+
+
 
 /* Hide the browser's default radio button */
 .container-edit input {
@@ -1114,31 +1234,58 @@ z-index: +1;
 /*   Relatorios de pretendentes   */
 
 
+
+#titulo-relatio{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+#relatorios-style{
+  margin-left: -150px;
+
+}
+
+#relatorios-style h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 17px;
+}
+
+
+#container-de-relatorio, #container-de-relatorio-off{
+  margin-top: 20px;
+  border: solid 4px;
+  border-radius: 20px;
+}
+
+
 #container-de-relatorio{
-border: solid 2px;
+
 border-color: #FD5F2D;
-border-radius: 15px;
+
 }
 #container-de-relatorio a{
   text-decoration: none;
   color: #FD5F2D;
 }
-#container-de-relatorio-mini{
-  width: 160px;
+#container-de-relatorio-mini, #container-de-relatorio-off-mini{
+  width: 260px;
+  height: 85px;
 }
 
 
 #container-de-relatorio-off{
-  border: solid 2px;
 border-color: #C5C5C5;
-border-radius: 15px;
 }
+
 #container-de-relatorio-off a{
   text-decoration: none;
   color: #C5C5C5;
-}
-#container-de-relatorio-off-mini{
-  width: 160px;
 }
 
 
