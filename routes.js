@@ -26,5 +26,13 @@ router.get('/perfil-adm', (req, res) => {
 router.get('/cadastro', (req, res) => {
     res.render('pages/cadastro', { users: users });
 });
+/*  rota para ver os modals */
+router.get('/modal-pages', (req, res) => {
+    res.render('pages/modal-pages');
+});
+
+router.get('/login', (req, res) => {
+    res.render('pages/login');
+});
 
 module.exports = router;

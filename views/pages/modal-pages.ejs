@@ -1,0 +1,398 @@
+<div id="modals-one">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /*   butao-do-moldal-tipo-1 */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 500px;
+            height: 250px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-content-type1 {
+            text-align: center;
+            color: tomato;
+            border: solid 6px;
+            border-color: #CE2501;
+            border-radius: 20px;
+            background-color: white;
+            width: 150px;
+            height: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content-type2 {
+            text-align: center;
+            border: solid 6px;
+            border-color: #7E7E7E;
+            border-radius: 20px;
+            background-color: white;
+            width: 150px;
+            height: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        #modal-content-link-type1 a {
+            color: #CE2501;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #modal-content-link-type2 a {
+            color: #7E7E7E;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .modal-content p {
+            font-size: 24px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+
+        /*   butao-do-moldal-tipo-2 */
+        /*       Modal maior         */
+
+
+        .modal2 {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal2-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 550px;
+            height: 300px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal2-content h2 {
+            font-weight: bold;
+            text-align: center;
+            color: #CE2501;
+            font-size: 36px;
+        }
+
+
+        .close2 {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close2:hover,
+        .close2:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #button-local-modal {
+            padding-left: 125px;
+        }
+
+        .modal2-content-type1 {
+            text-align: center;
+            border: solid 6px;
+            border-color: #CE2501;
+            border-radius: 20px;
+            background-color: white;
+            width: 150px;
+            height: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        #modal2-content-link-type1 a {
+            color: #CE2501;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .modal2-content p {
+            font-size: 24px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+
+
+        /*   butao-do-moldal-tipo-3 */
+        .modal3 {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal3-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 500px;
+            height: 250px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .close3 {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close3:hover,
+        .close3:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal3-content-type1 {
+            text-align: center;
+            color: tomato;
+            border: solid 6px;
+            border-color: #CE2501;
+            border-radius: 20px;
+            background-color: white;
+            width: 150px;
+            height: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal3-content-type2 {
+            text-align: center;
+            border: solid 6px;
+            border-color: #7E7E7E;
+            border-radius: 20px;
+            background-color: white;
+            width: 150px;
+            height: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        #modal3-content-link-type1 a {
+            color: #CE2501;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #modal3-content-link-type2 a {
+            color: #7E7E7E;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .modal3-content p {
+            font-size: 24px;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+    <div class="butao-do-moldal-tipo-1">
+        <button id="myBtn">Modal 1</button>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <div class="pt-5"></div>
+                <span class="close"></span>
+                <p>Você tem certeza que deseja excluir o cadastro deste animal?</p>
+                <div class="p-2"></div>
+                <div class="d-flex">
+                    <div class="p-4"></div>
+                    <div class="px-3">
+                        <button class="modal-content-type1">
+                            <div id="modal-content-link-type1">
+                                <a href="#">SIM</a>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="">
+                        <button class="modal-content-type2">
+                            <div id="modal-content-link-type2">
+                                <a href="#">NÃO</a>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="butao-do-moldal-tipo-2">
+        <button id="myBtn2">Modal 2</button>
+
+        <div id="myModal2" class="modal2">
+
+            <div class="modal2-content">
+                <div class="pt-1"></div>
+                <span class="close2"></span>
+                <h2>Formulario Enviado</h2>
+                <p>Falta pouco para concluirmos a adoção! Em breve entraremos em contato com você por Whatsapp ou Email.
+                </p>
+                <div class="p-2"></div>
+                <div class="d-flex">
+                    <div class="p-3"></div>
+                    <div class="text-center" id="button-local-modal">
+                        <button class="modal2-content-type1">
+                            <div id="modal2-content-link-type1">
+                                <a href="#">Entendi</a>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="butao-do-moldal-tipo-1">
+        <button id="myBtn3">Modal 1</button>
+
+        <div id="myModal3" class="modal3">
+
+            <div class="modal3-content">
+                <div class="pt-5"></div>
+                <span class="close3"></span>
+                <p>Modal de exemplo</p>
+                <div class="p-2"></div>
+                <div class="d-flex">
+                    <div class="p-4"></div>
+                    <div class="px-3">
+                        <button class="modal3-content-type1">
+                            <div id="modal3-content-link-type1">
+                                <a href="#">SIM</a>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="">
+                        <button class="modal3-content-type2">
+                            <div id="modal3-content-link-type2">
+                                <a href="#">NÃO</a>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        var btn2 = document.getElementById("myBtn2");
+        var modal2 = document.getElementById("myModal2");
+        var span2 = document.getElementsByClassName("close2")[0];
+        var btn3 = document.getElementById("myBtn3");
+        var modal3 = document.getElementById("myModal3");
+        var span3 = document.getElementsByClassName("close3")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        }
+        btn3.onclick = function () {
+            modal3.style.display = "block";
+        }
+        span3.onclick = function () {
+            modal3.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal || event.target == modal2 || event.target == modal3) {
+                modal.style.display = "none";
+                modal2.style.display = "none";
+                modal3.style.display = "none";
+            }
+
+        }
+    </script>
+</div>
