@@ -12,19 +12,29 @@
 <div>
 
     <svg class="formas" id="forma-1" data-name="forma 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
-                <defs>
-                    <style>.cls-1{fill:#f5f5f5;}</style>
-                </defs>
-                <title>Forma 1</title>
-                <path class="cls-1" d="M.13,1022,0,0H1920c-.15,246.6,0,937.57,0,937.57s-18.23-2.84-35.43-4.05c-253.4-17.85-420.34-26-749.93,60.94-78.24,20.65-302.12,63.56-371.22,71.75-80.24,9.52-160.83,13.15-241.57,13.72-61.71.43-123.37-1-185-5-49.76-3.25-99.31-8.43-148.61-15.87C125,1049.46,62.62,1035.44.13,1022Z"/>
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #f5f5f5;
+                }
+            </style>
+        </defs>
+        <title>Forma 1</title>
+        <path class="cls-1"
+            d="M.13,1022,0,0H1920c-.15,246.6,0,937.57,0,937.57s-18.23-2.84-35.43-4.05c-253.4-17.85-420.34-26-749.93,60.94-78.24,20.65-302.12,63.56-371.22,71.75-80.24,9.52-160.83,13.15-241.57,13.72-61.71.43-123.37-1-185-5-49.76-3.25-99.31-8.43-148.61-15.87C125,1049.46,62.62,1035.44.13,1022Z" />
     </svg>
 
     <svg class="formas" id="forma-adm" data-name="forma 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
         <defs>
-            <style>.cls-1{fill:#f5f5f5;}</style>
+            <style>
+                .cls-1 {
+                    fill: #f5f5f5;
+                }
+            </style>
         </defs>
         <title>Forma 3</title>
-        <path class="cls-1" d="M0,0V1080c117,0,173.94-23.73,234.23-48.85S357,980,480,980s185.41,26,245.77,51.15S843,1080,960,1080s173.94-23.73,234.23-48.85S1317,980,1440,980s185.41,26,245.77,51.15S1803,1080,1920,1080V0Z"/>
+        <path class="cls-1"
+            d="M0,0V1080c117,0,173.94-23.73,234.23-48.85S357,980,480,980s185.41,26,245.77,51.15S843,1080,960,1080s173.94-23.73,234.23-48.85S1317,980,1440,980s185.41,26,245.77,51.15S1803,1080,1920,1080V0Z" />
     </svg>
 </div>
 
@@ -37,13 +47,13 @@
 
 <div id="main-adm">
     <div class="container-fluid d-flex w-100  " id="myBtnContainer">
-        
+
         <div class="d-flex w-100" id="filtro-body"></div>
 
         <h7 class="col-1 floar-right pt-5" id="filtro-custom">Filtros: </h7>
         <div class="floar-right d-flex" id="icones-filtro">
-            
-            <button class="btn" onclick="filterSelection('Disponivel')">
+
+            <button class="btn" onclick="filterSelection3('Disponivel')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 240 200">
                     <title>Filtro - Disponivel</title>
@@ -53,7 +63,7 @@
                 <p>Disponivel</p>
             </button>
 
-            <button class="btn" onclick="filterSelection('Adotado')">
+            <button class="btn" onclick="filterSelection3('Adotado')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 240 200">
                     <title>Filtro - Adotado</title>
@@ -65,7 +75,7 @@
                 <p>Adotado</p>
             </button>
 
-            <button class="btn" onclick="filterSelection('all')">
+            <button class="btn" onclick="filterSelection3('Disp e Adot')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 240 200">
                     <title>Filtro - Disp e Adot</title>
@@ -87,7 +97,7 @@
 
             <div class="vl d-flex"></div>
 
-            <button id="padding-icon-adm" class="btn col-md-2" onclick="filterSelection('Adotado')">
+            <button id="padding-icon-adm" class="btn col-md-2" onclick="filterSelection3('C Candidato')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Com Adotantes</title>
@@ -101,7 +111,7 @@
                 <p>C/ Candidato</p>
             </button>
 
-            <button id="padding-icon-adm" class="btn col-md-2"  onclick="filterSelection('Adotado')">
+            <button id="padding-icon-adm" class="btn col-md-2" onclick="filterSelection3('S Candidato')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Sem Adotantes</title>
@@ -113,7 +123,7 @@
                 <p>S/ Candidato</p>
             </button>
 
-            <button class="btn" onclick="filterSelection('Adotado')">
+            <button class="btn" onclick="filterSelection3('C e S')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Com e Sem Adotantes</title>
@@ -141,29 +151,33 @@
 
             <div class="p-1" id="search-perfil-adm">
                 <form class="d-flex pt-2" action="#" id="search-form-adm">
-                    <input type="text" class="w-100" id="search-input-adm" name="add-ende" placeholder=" Digite o nome"><br><br>
+                    <input type="text" class="w-100" id="search-input-adm" name="add-ende"
+                        placeholder=" Digite o nome"><br><br>
                     <button class="btn" onclick="">
-                        <svg id="Camada_1"  height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                        <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 200 200">
                             <title>Filtro - Pesquisa</title>
-                            <path d="M42.14,79.54C42,35.68,77.14.07,120.67,0A79.13,79.13,0,0,1,200,78.85c.11,44.2-35,79.65-78.88,79.7A78.69,78.69,0,0,1,42.14,79.54Zm78.53,51.83A52,52,0,0,0,173,79.79c.2-28.9-23.18-52.63-51.9-52.69a52.14,52.14,0,0,0-.45,104.27Z"/>
-                            <path d="M67.64,150.46,49.46,132.23a7.33,7.33,0,0,0-1.07.86C32.1,149.4,15.83,165.72,0,181.58L18.39,200Z"/>
+                            <path
+                                d="M42.14,79.54C42,35.68,77.14.07,120.67,0A79.13,79.13,0,0,1,200,78.85c.11,44.2-35,79.65-78.88,79.7A78.69,78.69,0,0,1,42.14,79.54Zm78.53,51.83A52,52,0,0,0,173,79.79c.2-28.9-23.18-52.63-51.9-52.69a52.14,52.14,0,0,0-.45,104.27Z" />
+                            <path
+                                d="M67.64,150.46,49.46,132.23a7.33,7.33,0,0,0-1.07.86C32.1,149.4,15.83,165.72,0,181.58L18.39,200Z" />
                         </svg>
                     </button>
-            </button>
+                    </button>
 
                 </form>
             </div>
 
 
 
-          
-            
 
-            
+
+
+
         </div>
-  
 
-        
+
+
 
     </div>
 
@@ -181,11 +195,9 @@
 
 <!--  Catalogo - Admin  -->
 
-<div id="container2">
-    
+<div id="container-perfil-adm">
 
     <!--  LISTA DE ANIMAIS -->
-    <div class="pt-5"></div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
@@ -207,16 +219,16 @@
 
     <!-- botoes de passar pagina-->
     <center>
-    <div class=" pt-5" id="pages-adm-perfil">
-        <button id="button-adm-perfil-1"><a href="#">1</a></button>
-        <button id="button-adm-perfil"><a href="#">2</a></button>
-        <button id="button-adm-perfil"><a href="#">3</a></button>
-        <button id="button-adm-perfil"><a href="#">4</a></button>
-        <button id="button-adm-perfil"><a href="#">5</a></button>
-        <button id="button-adm-perfil"><a href="#">...</a></button>
-        <button id="button-adm-perfil-pro"><a href="#">Próximo></a></button>
-        <button id="button-adm-perfil-ult"><a href="#">Último>></a></button>
-    </div>
+        <div class=" pt-5" id="pages-adm-perfil">
+            <button id="button-adm-perfil-1"><a href="#">1</a></button>
+            <button id="button-adm-perfil"><a href="#">2</a></button>
+            <button id="button-adm-perfil"><a href="#">3</a></button>
+            <button id="button-adm-perfil"><a href="#">4</a></button>
+            <button id="button-adm-perfil"><a href="#">5</a></button>
+            <button id="button-adm-perfil"><a href="#">...</a></button>
+            <button id="button-adm-perfil-pro"><a href="#">Próximo></a></button>
+            <button id="button-adm-perfil-ult"><a href="#">Último>></a></button>
+        </div>
     </center>
 
 </div>

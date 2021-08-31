@@ -419,7 +419,7 @@ img{
   width: 1920px;
   left:-475px;
 
-  overflow-x:scroll;
+  overflow-x:hidden;
 
   /*background-color: red;*/
 
@@ -434,19 +434,47 @@ img{
   padding-top: 50px;
   padding-left: 160px;
 
-  height: 700px;
+  height: 760px;
   width: 1920px;
   left:-475px;
-
   overflow-x:hidden;
+}
 
-  /*background-color: red;*/
+#container4 {
 
+  position: absolute;
+  margin-top: 25px;
+
+  padding-top: 50px;
+  padding-left: 160px;
+
+  height: 760px;
+  width: 1920px;
+  left:-475px;
+  overflow-x:hidden;
 }
 
 
 #content {
-  width: 4000px;
+  width: 2500px;
+  height: 1500px;
+  display: grid;
+  grid-row-gap: 10px;
+  background-color: #FFC222;
+}
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 100px;
+  grid-template-columns: 315px 315px 315px 315px 315px 315px;
+  padding: 0px;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-row-gap: 100px;
+  grid-template-columns: 315px 315px 315px 315px 315px 315px;
+  padding: 0px;
 }
 
 #slideLeft{
@@ -460,6 +488,19 @@ img{
 }
 
 #slideRight{
+  position: absolute;
+  width: 100px;
+  height: 750px;
+  top: 45px;
+  right: -385px;
+  border: none;
+  /*outline:none;*/
+  z-index: +1;
+  box-shadow: -15px 0px 10px -5px rgba(0,0,0,0.15);
+  background-color: #f5f5f5;
+}
+
+#slideRight2{
   position: absolute;
   width: 100px;
   height: 750px;
@@ -493,7 +534,6 @@ img{
   display: grid;
   grid-auto-flow: column;
 }
-
 
 
 /*  perfil do animal  */
@@ -759,6 +799,9 @@ footer svg{
   color: #CE2501;
   font-family: 'Poppins', sans-serif;
 }
+
+/*  catalogo de edição do adm  */
+
 
 
 /*  Filtros de pesquisa adm  */

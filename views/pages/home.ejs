@@ -349,13 +349,10 @@
             d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
     </svg></button>
 -->
-            <div class="d-flex">
+            <div class="">
                 <div id="container3">
-
-
-
-                    <div id="content" class="col-2 service-box pt-2 d-flex">
-                        <div class="filterDiv Cachorro Femea  Tamanho M Adotado M e F Disp e Adot Tamanho Todos">
+                    <div class="grid-container service-box pt-2">
+                        <div class=" filterDiv Cachorro Femea Tamanho M Adotado M e F Disp e Adot Tamanho Todos">
                             <a href="#">
                                 <img src="https://i.imgur.com/oo67PIH.jpg" class="imagem-tamanho"></img>
                                 <div class="d-block" id="info">
@@ -393,6 +390,42 @@
                         <div class="filterDiv Cachorro Macho  Tamanho P Disponivel M e F Disp e Adot Tamanho Todos">
                             <a href="#">
                                 <img src="https://static.standard.co.uk/2021/06/21/12/IMG_4368.jpg?width=968&auto=webp&quality=75&crop=968%3A645%2Csmart"
+                                    class="imagem-tamanho"></img>
+                                <div class="d-block" id="info">
+                                    <h3>Nome</h3>
+                                    <div class="d-flex" id="info-nome">
+                                        <ul id="P">
+                                            P
+                                        </ul>
+                                        <ul id="M">
+                                            M
+                                        </ul>
+                                        <ul id="G">
+                                            G
+                                        </ul>
+
+                                        <spam id="circle"></spam>
+
+                                        <div class="px-3">
+                                            <div class="d-flex" id="genero-nome">
+                                                <svg id="Camada_1" height="22px" data-name="Camada 1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                                    <title>Filtro - Femea</title>
+                                                    <path
+                                                        d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
+                                                </svg>
+
+                                                <h5>Fêmea</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="filterDiv Cachorro Macho  Tamanho P Adotado M e F Disp e Adot Tamanho Todos">
+                            <a href="#">
+                                <img src="https://cdn.mos.cms.futurecdn.net/QjuZKXnkLQgsYsL98uhL9X-1200-80.jpg"
                                     class="imagem-tamanho"></img>
                                 <div class="d-block" id="info">
                                     <h3>Nome</h3>
@@ -569,13 +602,7 @@
                                 </div>
                             </a>
                         </div>
-
-
-
                     </div>
-
-
-
                 </div>
             </div>
         </div>
@@ -597,6 +624,17 @@
                     </svg>
                 </span>
             </button>
+            <script>
+                const buttonRight = document.getElementById('slideRight');
+                const buttonLeft = document.getElementById('slideLeft');
+
+                buttonRight.onclick = function () {
+                    document.getElementById('container3').scrollLeft += 150;
+                };
+                buttonLeft.onclick = function () {
+                    document.getElementById('container3').scrollLeft -= 150;
+                };
+            </script>
         </div>
     </div>
 
@@ -771,8 +809,6 @@
         </div>
     </div>
 
-
-
     <!--  Catalogo para gatos ------------------------------------------------------>
 
 
@@ -785,159 +821,295 @@
             d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
     </svg></button>
 -->
-            <div class="d-flex">
-                <div id="container">
-                    <div id="content col-10">
-                        <div class="col-2 service-box pt-2 d-flex ">
+            <div class="">
+                <div id="container4">
+                    <div class="grid-container4 service-box pt-2">
+                        <div class="filterDiv Gato Femea  Tamanho M Adotado M e F Disp e Adot Tamanho Todos">
+                            <a href="#">
+                                <img src="https://aliancatraducoes.com/wp-content/uploads/2019/10/o-que-sao-cat-tools.jpg"
+                                    class="imagem-tamanho"></img>
+                                <div class="d-block" id="info">
+                                    <h3>Nome</h3>
+                                    <div class="d-flex" id="info-nome">
+                                        <ul id="P">
+                                            P
+                                        </ul>
+                                        <ul id="M">
+                                            M
+                                        </ul>
+                                        <ul id="G">
+                                            G
+                                        </ul>
 
+                                        <spam id="circle"></spam>
 
+                                        <div class="px-3">
+                                            <div class="d-flex" id="genero-nome">
+                                                <svg id="Camada_1" height="22px" data-name="Camada 1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                                    <title>Filtro - Femea</title>
+                                                    <path
+                                                        d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
+                                                </svg>
 
-                            <div class="filterDiv Gato Femea  Tamanho M Adotado M e F Disp e Adot Tamanho Todos">
-                                <a href="#">
-                                    <img src="https://aliancatraducoes.com/wp-content/uploads/2019/10/o-que-sao-cat-tools.jpg"
-                                        class="imagem-tamanho"></img>
-                                    <div class="d-block" id="info">
-                                        <h3>Nome</h3>
-                                        <div class="d-flex" id="info-nome">
-                                            <ul id="P">
-                                                P
-                                            </ul>
-                                            <ul id="M">
-                                                M
-                                            </ul>
-                                            <ul id="G">
-                                                G
-                                            </ul>
-
-                                            <spam id="circle"></spam>
-
-                                            <div class="px-3">
-                                                <div class="d-flex" id="genero-nome">
-                                                    <svg id="Camada_1" height="22px" data-name="Camada 1"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                                        <title>Filtro - Femea</title>
-                                                        <path
-                                                            d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
-                                                    </svg>
-
-                                                    <h5>Fêmea</h5>
-                                                </div>
+                                                <h5>Fêmea</h5>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="filterDiv Gato Macho  Tamanho G Disponivel M e F Disp e Adot Tamanho Todos">
-                                <a href="#">
-                                    <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/08/cat-sitter-felino-1280x720.jpg"
-                                        class="imagem-tamanho"></img>
-                                    <div class="d-block" id="info">
-                                        <h3>Nome</h3>
-                                        <div class="d-flex" id="info-nome">
-                                            <ul id="P">
-                                                P
-                                            </ul>
-                                            <ul id="M">
-                                                M
-                                            </ul>
-                                            <ul id="G">
-                                                G
-                                            </ul>
+                        <div class="filterDiv Gato Macho  Tamanho G Disponivel M e F Disp e Adot Tamanho Todos">
+                            <a href="#">
+                                <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/08/cat-sitter-felino-1280x720.jpg"
+                                    class="imagem-tamanho"></img>
+                                <div class="d-block" id="info">
+                                    <h3>Nome</h3>
+                                    <div class="d-flex" id="info-nome">
+                                        <ul id="P">
+                                            P
+                                        </ul>
+                                        <ul id="M">
+                                            M
+                                        </ul>
+                                        <ul id="G">
+                                            G
+                                        </ul>
 
-                                            <spam id="circle"></spam>
+                                        <spam id="circle"></spam>
 
-                                            <div class="px-3">
-                                                <div class="d-flex" id="genero-nome">
-                                                    <svg id="Camada_1" height="22px" data-name="Camada 1"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                                        <title>Filtro - Femea</title>
-                                                        <path
-                                                            d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
-                                                    </svg>
+                                        <div class="px-3">
+                                            <div class="d-flex" id="genero-nome">
+                                                <svg id="Camada_1" height="22px" data-name="Camada 1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                                    <title>Filtro - Femea</title>
+                                                    <path
+                                                        d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
+                                                </svg>
 
-                                                    <h5>Fêmea</h5>
-                                                </div>
+                                                <h5>Fêmea</h5>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="filterDiv Gato Femea  Tamanho G Adotado M e F Disp e Adot Tamanho Todos">
-                                <a href="#">
-                                    <img src="https://i.pinimg.com/564x/ac/03/98/ac03988834695cc2f6eb623a74143355--green-eyes-bengal-cats.jpg"
-                                        class="imagem-tamanho"></img>
-                                    <div class="d-block" id="info">
-                                        <h3>Nome</h3>
-                                        <div class="d-flex" id="info-nome">
-                                            <ul id="P">
-                                                P
-                                            </ul>
-                                            <ul id="M">
-                                                M
-                                            </ul>
-                                            <ul id="G">
-                                                G
-                                            </ul>
+                        <div class="filterDiv Gato Femea  Tamanho G Adotado M e F Disp e Adot Tamanho Todos">
+                            <a href="#">
+                                <img src="https://i.pinimg.com/564x/ac/03/98/ac03988834695cc2f6eb623a74143355--green-eyes-bengal-cats.jpg"
+                                    class="imagem-tamanho"></img>
+                                <div class="d-block" id="info">
+                                    <h3>Nome</h3>
+                                    <div class="d-flex" id="info-nome">
+                                        <ul id="P">
+                                            P
+                                        </ul>
+                                        <ul id="M">
+                                            M
+                                        </ul>
+                                        <ul id="G">
+                                            G
+                                        </ul>
 
-                                            <spam id="circle"></spam>
+                                        <spam id="circle"></spam>
 
-                                            <div class="px-3">
-                                                <div class="d-flex" id="genero-nome">
-                                                    <svg id="Camada_1" height="22px" data-name="Camada 1"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                                        <title>Filtro - Femea</title>
-                                                        <path
-                                                            d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
-                                                    </svg>
+                                        <div class="px-3">
+                                            <div class="d-flex" id="genero-nome">
+                                                <svg id="Camada_1" height="22px" data-name="Camada 1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                                    <title>Filtro - Femea</title>
+                                                    <path
+                                                        d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
+                                                </svg>
 
-                                                    <h5>Fêmea</h5>
-                                                </div>
+                                                <h5>Fêmea</h5>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="filterDiv Gato Macho  Tamanho P Disponivel M e F Disp e Adot Tamanho Todos">
-                                <a href="#">
-                                    <img src="https://www.dicaspetz.com.br/wp-content/uploads/2020/02/cat-sitting.jpg"
-                                        class="imagem-tamanho"></img>
-                                    <div class="d-block" id="info">
-                                        <h3>Nome</h3>
-                                        <div class="d-flex" id="info-nome">
-                                            <ul id="P">
-                                                P
-                                            </ul>
-                                            <ul id="M">
-                                                M
-                                            </ul>
-                                            <ul id="G">
-                                                G
-                                            </ul>
+                        <div class="filterDiv Gato Macho  Tamanho P Disponivel M e F Disp e Adot Tamanho Todos">
+                            <a href="#">
+                                <img src="https://www.dicaspetz.com.br/wp-content/uploads/2020/02/cat-sitting.jpg"
+                                    class="imagem-tamanho"></img>
+                                <div class="d-block" id="info">
+                                    <h3>Nome</h3>
+                                    <div class="d-flex" id="info-nome">
+                                        <ul id="P">
+                                            P
+                                        </ul>
+                                        <ul id="M">
+                                            M
+                                        </ul>
+                                        <ul id="G">
+                                            G
+                                        </ul>
 
-                                            <spam id="circle"></spam>
+                                        <spam id="circle"></spam>
 
-                                            <div class="px-3">
-                                                <div class="d-flex" id="genero-nome">
-                                                    <svg id="Camada_1" height="22px" data-name="Camada 1"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                                        <title>Filtro - Femea</title>
-                                                        <path
-                                                            d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
-                                                    </svg>
+                                        <div class="px-3">
+                                            <div class="d-flex" id="genero-nome">
+                                                <svg id="Camada_1" height="22px" data-name="Camada 1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                                    <title>Filtro - Femea</title>
+                                                    <path
+                                                        d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
+                                                </svg>
 
-                                                    <h5>Fêmea</h5>
-                                                </div>
+                                                <h5>Fêmea</h5>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
+                        <div class="filterDiv Gato Femea  Tamanho M Adotado M e F Disp e Adot Tamanho Todos">
+                            <a href="#">
+                                <img src="https://aliancatraducoes.com/wp-content/uploads/2019/10/o-que-sao-cat-tools.jpg"
+                                    class="imagem-tamanho"></img>
+                                <div class="d-block" id="info">
+                                    <h3>Nome</h3>
+                                    <div class="d-flex" id="info-nome">
+                                        <ul id="P">
+                                            P
+                                        </ul>
+                                        <ul id="M">
+                                            M
+                                        </ul>
+                                        <ul id="G">
+                                            G
+                                        </ul>
 
+                                        <spam id="circle"></spam>
 
+                                        <div class="px-3">
+                                            <div class="d-flex" id="genero-nome">
+                                                <svg id="Camada_1" height="22px" data-name="Camada 1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                                    <title>Filtro - Femea</title>
+                                                    <path
+                                                        d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
+                                                </svg>
+
+                                                <h5>Fêmea</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="filterDiv Gato Macho  Tamanho G Disponivel M e F Disp e Adot Tamanho Todos">
+                            <a href="#">
+                                <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/08/cat-sitter-felino-1280x720.jpg"
+                                    class="imagem-tamanho"></img>
+                                <div class="d-block" id="info">
+                                    <h3>Nome</h3>
+                                    <div class="d-flex" id="info-nome">
+                                        <ul id="P">
+                                            P
+                                        </ul>
+                                        <ul id="M">
+                                            M
+                                        </ul>
+                                        <ul id="G">
+                                            G
+                                        </ul>
+
+                                        <spam id="circle"></spam>
+
+                                        <div class="px-3">
+                                            <div class="d-flex" id="genero-nome">
+                                                <svg id="Camada_1" height="22px" data-name="Camada 1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                                    <title>Filtro - Femea</title>
+                                                    <path
+                                                        d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
+                                                </svg>
+
+                                                <h5>Fêmea</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="filterDiv Gato Femea  Tamanho G Adotado M e F Disp e Adot Tamanho Todos">
+                            <a href="#">
+                                <img src="https://i.pinimg.com/564x/ac/03/98/ac03988834695cc2f6eb623a74143355--green-eyes-bengal-cats.jpg"
+                                    class="imagem-tamanho"></img>
+                                <div class="d-block" id="info">
+                                    <h3>Nome</h3>
+                                    <div class="d-flex" id="info-nome">
+                                        <ul id="P">
+                                            P
+                                        </ul>
+                                        <ul id="M">
+                                            M
+                                        </ul>
+                                        <ul id="G">
+                                            G
+                                        </ul>
+
+                                        <spam id="circle"></spam>
+
+                                        <div class="px-3">
+                                            <div class="d-flex" id="genero-nome">
+                                                <svg id="Camada_1" height="22px" data-name="Camada 1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                                    <title>Filtro - Femea</title>
+                                                    <path
+                                                        d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
+                                                </svg>
+
+                                                <h5>Fêmea</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="filterDiv Gato Macho  Tamanho P Disponivel M e F Disp e Adot Tamanho Todos">
+                            <a href="#">
+                                <img src="https://www.dicaspetz.com.br/wp-content/uploads/2020/02/cat-sitting.jpg"
+                                    class="imagem-tamanho"></img>
+                                <div class="d-block" id="info">
+                                    <h3>Nome</h3>
+                                    <div class="d-flex" id="info-nome">
+                                        <ul id="P">
+                                            P
+                                        </ul>
+                                        <ul id="M">
+                                            M
+                                        </ul>
+                                        <ul id="G">
+                                            G
+                                        </ul>
+
+                                        <spam id="circle"></spam>
+
+                                        <div class="px-3">
+                                            <div class="d-flex" id="genero-nome">
+                                                <svg id="Camada_1" height="22px" data-name="Camada 1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                                    <title>Filtro - Femea</title>
+                                                    <path
+                                                        d="M162.5,70.27a62.5,62.5,0,1,0-75.88,61.31c.08,4.36,0,10.27,0,14.49H84.39c-3.94,0-7.89-.09-11.82.05a12.15,12.15,0,0,0-11.18,15.82c1.6,5.26,6.08,8.52,12.09,8.64,4.27.09,8.55,0,13.38,0,0,3.85-.21,7.46,0,11A11.05,11.05,0,0,0,94,191.36,11.55,11.55,0,0,0,106.12,190a11.94,11.94,0,0,0,4.94-10.25c0-3,0-6,0-9.17h2.21c4.14,0,8.29.1,12.43,0A12.24,12.24,0,0,0,138,158.08c-.09-6.73-5.47-11.89-12.54-12-3.39-.05-6.77,0-10.16,0h-4.07V132A62.71,62.71,0,0,0,162.5,70.27ZM60,70.27a40,40,0,1,1,40,40.17A40.08,40.08,0,0,1,60,70.27Z" />
+                                                </svg>
+
+                                                <h5>Fêmea</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -951,7 +1123,7 @@
         <!--   Botao de passar    --------------------------------------------->
 
         <div class="float-right">
-            <button id="slideRight" type="button">
+            <button id="slideRight2" type="button">
                 <span id="dot">
                     <svg id="seta" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"
                         style="margin-left: 5px;">
@@ -961,8 +1133,33 @@
                     </svg>
                 </span>
             </button>
+            <script>
+                const bl = document.getElementById('slideRight2');
+                const bf = document.getElementById('slideLeft2');
+
+                bl.onclick = function () {
+                    document.getElementById('container4').scrollLeft += 150;
+                };
+                bf.onclick = function () {
+                    document.getElementById('container4').scrollLeft -= 150;
+                };</script>
         </div>
     </div>
+
+
+    <script>
+
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+                this.className += "active";
+            });
+        }
+
+    </script>
 
 
     <div class="margin-catalogo"></div>
