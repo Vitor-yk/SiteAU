@@ -1,19 +1,22 @@
 const express = require("express");
 const router = express.Router();
+const animalController = require('./controllers/animal-controller');
 
 router.use(express.static('public'));
 
-router.get('/', (req, res) => {
-    res.render('pages/home');
-});
+router.get('/', animalController.getAnimais);
+
+router.post('/', animalController.postAnimal);
+router.post('/', animalController.postTemperamento);
+router.post('/', animalController.postSociavel);
+router.post('/', animalController.postVive);
+router.post('/', animalController.postSaude);
 
 router.get('/about', (req, res) => {
     res.render('pages/about');
 });
 
-router.get('/perfil', (req, res) => {
-    res.render('pages/perfil');
-});
+router.get('/perfil/:idAnimais', animalController.getAnimal);
 
 router.get('/formulario', (req, res) => {
     res.render('pages/formulario');
@@ -26,6 +29,7 @@ router.get('/perfil-adm', (req, res) => {
 router.get('/cadastro', (req, res) => {
     res.render('pages/cadastro', { users: users });
 });
+
 /*  rota para ver os modals */
 router.get('/modal-pages', (req, res) => {
     res.render('pages/modal-pages');
