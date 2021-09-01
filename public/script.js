@@ -2,18 +2,72 @@
 /*  filtro Cães */
 
 
-filterSelection("all")
+filterSelectionSexoC("all")
+filterSelectionTamanhoC("all")
+filterSelectionDisponibilidadeC("all")
 
-
-function filterSelection(c) {
+function filterSelectionSexoC(s) {
     var x, i;
     x = document.getElementsByClassName("filterDiv Cachorro");
-    if (c == "all") c = "";
+    if (s == "all") s = "";
     for (i = 0; i < x.length; i++) {
         w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        if (x[i].className.indexOf(s) > -1) w3AddClass(x[i], "show");
     }
 }
+
+function filterSelectionTamanhoC(t) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv Cachorro");
+    if (t == "all") t = "";
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(t) > -1) w3AddClass(x[i], "show");
+    }
+}
+function filterSelectionDisponibilidadeC(d) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv Cachorro");
+    if (d == "all") d = "";
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(d) > -1) w3AddClass(x[i], "show");
+    }
+}
+
+function filterSelectionSexoG(sg) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv Gato");
+    if (sg == "all") sg = "";
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(sg) > -1) w3AddClass(x[i], "show");
+    }
+}
+
+function filterSelectionTamanhoG(tg) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv Gato");
+    if (tg == "all") tg = "";
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(tg) > -1) w3AddClass(x[i], "show");
+    }
+}
+function filterSelectionDisponibilidadeG(dg) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv Gato");
+    if (dg == "all") dg = "";
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(dg) > -1) w3AddClass(x[i], "show");
+    }
+}
+
+
+
+
+
 
 function w3AddClass(element, name) {
     var i, arr1, arr2;
@@ -37,15 +91,19 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn-filter");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace("active", "");
-        this.className += "active";
-    });
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -56,18 +114,6 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-filterSelection2("all")
-
-
-function filterSelection2(c) {
-    var x, i;
-    x = document.getElementsByClassName("filterDiv Gato");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-}
 
 function w3AddClass(element, name) {
     var i, arr1, arr2;

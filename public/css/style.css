@@ -328,6 +328,18 @@ img{
 }
 
 
+
+#myBtnContainer-filtros{
+  margin-top: 50px;
+  margin-bottom: 0px;
+  height: 90px;
+}
+
+#myBtnContainer-filtros p{
+  padding: 0px;
+  color: #c5c5c5;
+}
+
 #filtro-body{
   position: absolute;
   z-index: -2;
@@ -396,6 +408,9 @@ img{
    outline: none !important;
    box-shadow: none;
 }
+
+
+
 
 
 #padding-icon-adm{
@@ -802,6 +817,14 @@ footer svg{
 
 /*  catalogo de edição do adm  */
 
+#container-perfil-adm{
+  left:36%;
+  padding-bottom: 100px;
+  display: grid;
+  grid-row-gap: 100px;
+  grid-template-columns: 315px 315px 315px 315px 315px ;
+  padding: 0px;
+}
 
 
 /*  Filtros de pesquisa adm  */

@@ -171,7 +171,7 @@
     <!--  Filtro para cães --------------------------------------------------->
 
 
-    <div class="d-flex w-100" id="myBtnContainer">
+    <div class="d-flex w-100" id="myBtnContainer-filtro">
 
         <div class="d-flex w-100" id="filtro-body"></div>
 
@@ -181,10 +181,8 @@
 
         <div class="floar-right d-flex" id="icones-filtro">
 
-
             <!--  Filtro para cães - macho -->
-
-            <button class="btn " onclick="filterSelection('Macho')">
+            <button class="btn " role="button" onclick="filterSelectionSexoC('Macho')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Macho</title>
@@ -196,7 +194,7 @@
 
             <!--  Filtro para cães - femea -->
 
-            <button class="btn active" onclick="filterSelection('Femea')">
+            <button class="btn" onclick="filterSelectionSexoC('Femea')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Femea</title>
@@ -208,7 +206,7 @@
 
             <!--  Filtro para cães - meacho e femea -->
 
-            <button class="btn " onclick="filterSelection('M e F')">
+            <button class="btn active" onclick="filterSelectionSexoC('M e F')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Macho e Femea</title>
@@ -220,11 +218,16 @@
                 <p>Todos</p>
             </button>
 
+            <script>
+
+            </script>
+
+
             <div class="vl d-flex"></div>
 
             <!--  Filtro para cães - pequenos -->
 
-            <button class="btn" onclick="filterSelection('Tamanho P')">
+            <button class="btn" onclick="filterSelectionTamanhoC('Tamanho P')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 231.57 200">
                     <title>Filtro - Tamanho P</title>
@@ -238,7 +241,7 @@
 
             <!--  Filtro para cães - medios -->
 
-            <button class="btn" onclick="filterSelection('Tamanho M')">
+            <button class="btn" onclick="filterSelectionTamanhoC('Tamanho M')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 284.65 200">
                     <title>Filtro - Tamanho M</title>
@@ -252,7 +255,7 @@
 
             <!--  Filtro para cães - grandes -->
 
-            <button class="btn" onclick="filterSelection('Tamanho G')">
+            <button class="btn" onclick="filterSelectionTamanhoC('Tamanho G')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 256.15 200">
                     <title>Filtro - Tamanho G</title>
@@ -266,7 +269,7 @@
 
             <!--  Filtro para cães - todos PMG -->
 
-            <button class="btn" onclick="filterSelection('Tamanho Todos')">
+            <button class="btn active" onclick="filterSelectionTamanhoC('Tamanho Todos')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Tamanho</title>
@@ -287,7 +290,7 @@
 
             <!--  Filtro para cães - disponivel -->
 
-            <button class="btn" onclick="filterSelection('Disponivel')">
+            <button class="btn" onclick="filterSelectionDisponibilidadeC('Disponivel')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 240 200">
                     <title>Filtro - Disponivel</title>
@@ -299,7 +302,7 @@
 
             <!--  Filtro para cães - adotado -->
 
-            <button class="btn" onclick="filterSelection('Adotado')">
+            <button class="btn" onclick="filterSelectionDisponibilidadeC('Adotado')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 240 200">
                     <title>Filtro - Adotado</title>
@@ -313,7 +316,7 @@
 
             <!--  Filtro para cães - disponivel e adotado -->
 
-            <button class="btn" onclick="filterSelection('Disp e Adot')">
+            <button class="btn active" onclick="filterSelectionDisponibilidadeC('Disp e Adot')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 240 200">
                     <title>Filtro - Disp e Adot</title>
@@ -332,7 +335,19 @@
                 </svg>
                 <p>Todos</p>
             </button>
+
         </div>
+        <script>
+            var btnContainerFilter = document.getElementById("myBtnContainer-filtro");
+            var btnsFilter = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btnsFilter.length; i++) {
+                btnsFilter[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
     </div>
 
 
@@ -645,7 +660,7 @@
 
     <!--  Filtro para gatos --------------------------------------------------->
 
-    <div class="d-flex w-100" id="myBtnContainer">
+    <div class="d-flex w-100" id="myBtnContainer-filtros">
 
         <div class="d-flex w-100" id="filtro-body"></div>
 
@@ -658,7 +673,7 @@
 
             <!--  Filtro para gatos - macho -->
 
-            <button class="btn " onclick="filterSelection2('Macho')">
+            <button class="btn " onclick="filterSelectionSexoG('Macho')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Macho</title>
@@ -670,7 +685,7 @@
 
             <!--  Filtro para cães - femea -->
 
-            <button class="btn " onclick="filterSelection2('Femea')">
+            <button class="btn " onclick="filterSelectionSexoG('Femea')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Femea</title>
@@ -682,7 +697,7 @@
 
             <!--  Filtro para cães - meacho e femea -->
 
-            <button class="btn active" onclick="filterSelection2('M e F')">
+            <button class="btn active" onclick="filterSelectionSexoG('M e F')">
                 <svg id="Camada_1" height="35px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Macho e Femea</title>
@@ -698,7 +713,7 @@
 
             <!--  Filtro para cães - pequenos -->
 
-            <button class="btn" onclick="filterSelection2('Tamanho P')">
+            <button class="btn" onclick="filterSelectionTamanhoG('Tamanho P')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 231.57 200">
                     <title>Filtro - Tamanho P</title>
@@ -712,7 +727,7 @@
 
             <!--  Filtro para cães - medios -->
 
-            <button class="btn" onclick="filterSelection2('Tamanho M')">
+            <button class="btn" onclick="filterSelectionTamanhoG('Tamanho M')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 284.65 200">
                     <title>Filtro - Tamanho M</title>
@@ -726,7 +741,7 @@
 
             <!--  Filtro para cães - grandes -->
 
-            <button class="btn" onclick="filterSelection2('Tamanho G')">
+            <button class="btn" onclick="filterSelectionTamanhoG('Tamanho G')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 256.15 200">
                     <title>Filtro - Tamanho G</title>
@@ -740,7 +755,7 @@
 
             <!--  Filtro para cães - todos PMG -->
 
-            <button class="btn" onclick="filterSelection2('Tamanho Todos')">
+            <button class="btn" onclick="filterSelectionTamanhoG('Tamanho Todos')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 200 200">
                     <title>Filtro - Tamanho</title>
@@ -761,7 +776,7 @@
 
             <!--  Filtro para cães - disponivel -->
 
-            <button class="btn" onclick="filterSelection2('Disponivel')">
+            <button class="btn" onclick="filterSelectionDisponibilidadeG('Disponivel')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 240 200">
                     <title>Filtro - Disponivel</title>
@@ -773,7 +788,7 @@
 
             <!--  Filtro para cães - adotado -->
 
-            <button class="btn" onclick="filterSelection2('Adotado')">
+            <button class="btn" onclick="filterSelectionDisponibilidadeG('Adotado')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 240 200">
                     <title>Filtro - Adotado</title>
@@ -787,7 +802,7 @@
 
             <!--  Filtro para cães - disponivel e adotado -->
 
-            <button class="btn" onclick="filterSelection2('Disp e Adot')">
+            <button class="btn" onclick="filterSelectionDisponibilidadeG('Disp e Adot')">
                 <svg id="Camada_1" height="30px" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 240 200">
                     <title>Filtro - Disp e Adot</title>
